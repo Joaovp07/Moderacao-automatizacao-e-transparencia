@@ -3,11 +3,15 @@
 
 ## Integrantes
 
-* Bruno Rodrigues | dev-rodrigues-bruno | Gestão | 48101541  
-* Caio Dal Pizzol Fonseca | caio-fonseca | Cibersegurança e Gestão | 47923121
-* Denner de Paula Coutinho | denner-coutinho | Engenharia de Dados e Gestão | 48094030
-* João Vitor Pires Ribeiro | Joaovp07 | Ciência de Dados e Gestão | 47792591
-* Nicollas Guedes Da Silva Santos | Nicollas-Guedes | Engenharia de Dados e Cloud | 48131334
+## Integrantes
+
+| Nome completo | GitHub | Área de carreira | RGM |
+|---|---|---|---|
+| Bruno Rodrigues | dev-rodrigues-bruno | Gestão | 48101541 |
+| Caio Dal Pizzol Fonseca | caio-fonseca | Cibersegurança e Gestão | 47923121 |
+| Denner de Paula Coutinho | denner-coutinho | Engenharia de Dados e Gestão | 48094030 |
+| João Vitor Pires Ribeiro | Joaovp07 | Ciência de Dados e Gestão | 47792591 |
+| Nicollas Guedes Da Silva Santos | Nicollas-Guedes | Engenharia de Dados e Cloud | 48131334 |
 
 **Dossiê:** 5 - Moderação automatizada e transparência 
 
@@ -62,45 +66,55 @@ flowchart LR
 
 ## 3. Análise ética
 
+A plataforma PIST deve garantir segurança, privacidade e transparência no tratamento das informações dos cidadãos. A automação será utilizada para auxiliar os servidores, sem substituir a decisão humana.
 
-### 3.1 Matriz de riscos (mínimo 5)
+### 3.1 Matriz de riscos
 
-
-| # | Risco | Classificação | Impacto (quem e quão grave) | Controle |
+| # | Risco | Classificação | Impacto | Controle |
 |---|---|---|---|---|
-| 1 | | [ético / legal-privacidade / segurança / viés-inclusão / governança] | | |
-
+| 1 | Vazamento de dados pessoais | Segurança / Legal-privacidade | Exposição de informações dos cidadãos. | Criptografia e controle de acesso. |
+| 2 | Classificação incorreta dos pedidos | Ético / Viés-inclusão | Atrasos no atendimento. | Revisão por servidores. |
+| 3 | Falta de transparência | Ético / Governança | Cidadão sem informações sobre seu pedido. | Histórico e status disponíveis. |
+| 4 | Acesso indevido ao sistema | Segurança | Consulta ou alteração de dados sem autorização. | Autenticação e registro de acessos. |
+| 5 | Exclusão digital | Viés-inclusão / Ético | Dificuldade de acesso para parte da população. | Manter atendimento presencial e interface acessível. |
+| 6 | Decisões somente automatizadas | Ético / Governança | Cidadãos prejudicados por erros do sistema. | Aprovação humana nas decisões administrativas. |
 
 ### 3.2 Decisão
-**[Implantar | Implantar com controles | Não implantar ainda]**
-[Justificativa em até 10 linhas]
 
+**Implantar com controles**
+
+A plataforma pode melhorar os serviços municipais, facilitar solicitações e aumentar a transparência. Porém, sua implantação depende de medidas de segurança, proteção de dados e revisão humana. O projeto deverá começar com um serviço piloto, permitindo identificar e corrigir problemas antes de sua expansão.
 
 ### 3.3 Controles antes de entrar em produção
 
-
 | Eixo | Controle | Quem faz | Como saber que foi cumprido |
 |---|---|---|---|
-| Transparência | | | |
-| Revisão humana | | | |
-| Minimização de dados | | | |
-| Segurança | | | |
-| Teste de viés | | | |
-| Canal de contestação | | | |
-
+| Transparência | Informar como o sistema utiliza os dados. | Gestão | Aviso de privacidade publicado. |
+| Revisão humana | Garantir decisões finais por servidores. | Prefeitura | Fluxo de aprovação testado. |
+| Minimização de dados | Coletar somente dados necessários. | Desenvolvimento | Formulários revisados. |
+| Segurança | Proteger acessos e informações. | Cibersegurança | Testes de segurança realizados. |
+| Teste de viés | Verificar erros e possíveis discriminações. | Dados e gestão | Resultados documentados. |
+| Canal de contestação | Permitir questionamentos dos cidadãos. | Prefeitura | Canal disponível e funcionando. |
 
 ### 3.4 LGPD
 
+A plataforma deverá seguir a Lei Geral de Proteção de Dados (Lei nº 13.709/2018), coletando apenas informações necessárias e garantindo seu armazenamento seguro.
 
 | Dado pessoal | Finalidade | Base legal | Por quanto tempo | Sensível ou de criança/adolescente? |
 |---|---|---|---|---|
-| | | | | |
+| Nome completo | Identificar o cidadão. | Art. 7º, III, quando aplicável. | Conforme regras de conservação documental. | Não. |
+| CPF | Confirmar identidade, quando necessário. | Art. 7º, III, quando aplicável. | Conforme necessidade e obrigações legais. | Não. |
+| E-mail e telefone | Enviar atualizações. | Art. 7º, III, quando aplicável. | Enquanto necessários para o atendimento. | Não. |
+| Endereço | Verificar localização, quando necessário. | Art. 7º, III, quando aplicável. | Conforme necessidade do serviço. | Não. |
+| Solicitação e anexos | Analisar o pedido. | Arts. 7º, 11 e 23, conforme o dado e a finalidade. | Conforme regras de conservação documental. | Podem conter. |
 
+**Observação:** dados sensíveis ou de menores deverão receber proteção adicional. O painel público apresentará apenas indicadores agregados, sem identificar os cidadãos.
 
 ### 3.5 Comunicado público
 
+> A PIST facilita o acesso aos serviços municipais, permitindo que os cidadãos registrem solicitações e acompanhem seu andamento pela internet. A tecnologia auxilia na organização dos pedidos, mas as decisões finais continuam sob responsabilidade dos servidores. As informações pessoais serão protegidas conforme a LGPD, e a população poderá consultar indicadores públicos de transparência.
 
-> [Texto de até 600 caracteres para o LinkedIn da consultoria]
+**Contagem:** aproximadamente 430 caracteres.
 
 
 **Contagem:** [N] caracteres
