@@ -369,27 +369,23 @@ Caso a adesão ou os resultados fiquem abaixo do esperado, o atendimento presenc
 ## 8. Capítulos individuais
 
 
-### 8.1 [Nome do integrante] — [Área]
+### 8.1 Nicollas Guedes Da Silva Santos — Engenharia de Dados e Cloud
 
-
-**Papel no projeto:** [pelo que respondeu e o que produziu]
-
+**Papel no projeto:** responsável por desenhar o pipeline de dados da plataforma PIST e estruturar a separação entre a base transacional (PostgreSQL) e a base pública agregada para os painéis de transparência. Produzi o modelo relacional dos protocolos, as rotinas de ETL (Extração, Transformação e Carga) para geração de indicadores sem risco de reidentificação, o dicionário de dados e as regras de qualidade e rastreabilidade que evitam duplicidades nas solicitações municipais.
 
 **Plano de desenvolvimento**
 
-
 | Competência que a solução exige | Técnica ou comportamental | Já tenho? |
 |---|---|---|
-| | | |
-
+| Modelagem de dados relacionais e transacionais para ambientes de alta disponibilidade | Técnica | Parcial (domino conceitos básicos, preciso aprofundar em otimização de índices para grandes volumes) |
+| Construção de pipelines de ETL seguros com anonimização de dados sensíveis | Técnica | Não (preciso estudar LGPD aplicada a engenharia de dados e mascaramento) |
+| Comunicação técnica e alinhamento com áreas de Cibersegurança e Gestão | Comportamental | Sim (atuei ativamente nas reuniões de alinhamento da arquitetura) |
 
 **Metas SMART (6 a 12 meses)**
-1. [Específica, mensurável, atingível, relevante e com prazo]
-
+1. Concluir a certificação oficial em engenharia de dados em nuvem (focada em PostgreSQL e pipelines de ETL) e implementar um pipeline automatizado de anonimização em ambiente de homologação até maio de 2027.
 
 **Feedback dos colegas**
-[Avaliação construtiva e propositiva, escrita em conjunto pelos demais integrantes]
-
+ demonstrou excelente domínio técnico ao estruturar o banco de dados da PIST, garantindo que o fluxo de informações entre os protocolos e o painel de transparência funcionasse sem gargalos. Sua participação foi fundamental para separar os dados operacionais dos indicadores públicos de forma segura. Como ponto de desenvolvimento para os próximos projetos, sugerimos que ele lidere também a documentação das APIs de integração com sistemas externos.
 
 ### 8.2 [Próximo integrante] — [Área]
 ### 8.3 [Próximo integrante] — [Área]
