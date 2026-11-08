@@ -14,15 +14,6 @@
 **Recorte:** digitalização e automação, por regras auditáveis e com decisão final sempre humana, das solicitações administrativas de uma prefeitura, permitindo ao cidadão abrir e acompanhar o pedido online e à população consultar indicadores agregados de desempenho em um painel público. A implantação começa por um piloto em um único serviço municipal.
 
 
-| Nome completo (ordem alfabética) | GitHub | Área de carreira | RGM |
-|---|---|---|---|
-| [Nome] | [@usuario] | [Área] | [RGM] |
-
-
-**Dossiê:** [número e título]
-**Recorte:** [público, região ou etapa, com a justificativa; ou "sem recorte"]
-
-
 ## 1. Análise do problema
 
 
