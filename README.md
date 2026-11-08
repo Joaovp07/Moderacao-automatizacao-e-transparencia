@@ -65,14 +65,85 @@ flowchart LR
 
 ### 2.3 O trabalho de cada área
 
+#### Engenharia de Dados
 
-#### [Área 1]
-#### [Área 2]
+A Engenharia de Dados será responsável por organizar o ciclo de vida dos dados da plataforma. Definirá os modelos de dados, os padrões de qualidade, os processos de integração e a separação entre registros operacionais e dados destinados à análise pública. Também implementará pipelines para calcular indicadores, validar consistência e detectar duplicidades.
+
+Entre suas entregas estão:
+- modelo de dados para protocolos, etapas, unidades e prazos;
+- rotinas de extração, transformação e carga (ETL);
+- catálogo e dicionário de dados;
+- regras de qualidade, rastreabilidade e atualização;
+- mecanismos de agregação e anonimização para os painéis públicos.
+
+#### Ciência de Dados
+
+A Ciência de Dados poderá analisar dados agregados para identificar gargalos, sazonalidade, categorias com maior atraso e diferenças de desempenho entre unidades. Inicialmente, os indicadores serão descritivos e explicáveis; não será utilizado um modelo preditivo para decidir direitos ou negar solicitações.
+
+Caso futuramente seja desenvolvido um modelo para estimar demanda ou prazo, ele deverá ser validado com dados representativos, ter suas limitações documentadas, ser monitorado para detectar distorções e servir apenas como apoio ao planejamento — nunca como substituto da decisão humana.
+
+#### Cloud Computing
+
+A área de Cloud Computing projetará uma infraestrutura escalável e resiliente, com ambientes separados de desenvolvimento, testes e produção. Será responsável por implantação automatizada, backups, recuperação de desastre, gestão de custos, disponibilidade e atualização dos serviços.
+
+A proposta considera:
+- infraestrutura como código;
+- implantação contínua com revisão e testes;
+- criptografia em trânsito e em repouso;
+- backups periódicos e testes de restauração;
+- monitoramento de disponibilidade, desempenho e custos;
+- plano de continuidade e recuperação de desastre.
+
+A adoção de nuvem não elimina a responsabilidade do órgão sobre segurança, privacidade, contratos e continuidade do serviço.
+
+#### Cibersegurança
+
+A Cibersegurança definirá e acompanhará controles para proteger dados, identidades, sistemas e documentos. Entre as atividades:
+- análise de ameaças e avaliação de risco antes da implantação;
+- autenticação forte para servidores e administradores;
+- controle de acesso baseado em função e princípio do menor privilégio;
+- gestão de vulnerabilidades, atualizações e segredos;
+- testes de segurança e revisão de APIs;
+- monitoramento de eventos e resposta a incidentes;
+- proteção contra abuso, indisponibilidade e acesso indevido;
+- plano de resposta e comunicação de incidentes.
+
+#### Redes
+
+A área de Redes garantirá conectividade segura entre os componentes e os sistemas externos. Planejará segmentação de rede, regras de firewall, proteção de interfaces públicas, VPN ou conexão privada quando aplicável, redundância e monitoramento. Também apoiará a disponibilidade dos canais e a comunicação entre unidades administrativas.
+
+#### Gestão
+
+A Gestão será responsável pelo mapeamento dos processos atuais, pela definição dos serviços prioritários e pela revisão das regras administrativas antes de automatizá-las. Coordenará servidores, tecnologia, atendimento ao cidadão, jurídico, acessibilidade e proteção de dados.
+
+Suas atribuições incluem:
+- mapear processos e eliminar etapas desnecessárias;
+- definir responsáveis, prazos e níveis de serviço;
+- elaborar plano de implantação gradual;
+- capacitar servidores e equipes de atendimento;
+- acompanhar indicadores e promover melhoria contínua;
+- organizar consulta pública e testes com usuários;
+- garantir orçamento, governança e manutenção após o primeiro ano.
+
 #### Como as áreas se complementam
+
+A Gestão define o processo e os objetivos; Engenharia de Dados garante dados consistentes; Ciência de Dados transforma dados agregados em análises úteis; Cloud sustenta a plataforma; Redes assegura conectividade; e Cibersegurança protege o ambiente. As áreas trabalham em conjunto desde o levantamento de requisitos até a operação, com revisões técnicas e éticas em cada etapa. A transparência depende tanto de arquitetura e qualidade dos dados quanto de processos administrativos claros e servidores preparados.
 
 
 ### 2.4 O que a tecnologia não resolve
 
+A plataforma pode reduzir trabalho repetitivo e melhorar o acompanhamento, mas não resolve sozinha problemas institucionais ou sociais. Permanecem dependentes de ação humana e de políticas públicas:
+
+- **Decisões administrativas:** deferir, indeferir ou priorizar pedidos que envolvam análise de mérito ou direitos exige autoridade competente e justificativa.
+- **Revisão de processos:** automatizar um procedimento burocrático sem redesenhá-lo pode apenas digitalizar a burocracia existente.
+- **Inclusão digital:** pessoas sem internet, dispositivo, alfabetização digital ou recursos de acessibilidade precisam de atendimento presencial ou assistido.
+- **Transparência efetiva:** divulgar números não substitui explicar decisões, publicar informações em linguagem clara e responder a pedidos de acesso à informação.
+- **Qualidade dos dados:** a plataforma depende de registros completos e corretos; dados ruins geram indicadores enganosos.
+- **Capacidade institucional:** falta de servidores, orçamento ou coordenação pode manter atrasos mesmo com automação.
+- **Confiança pública:** será construída por prestação de contas, participação social, proteção de dados e correção de falhas.
+- **Mudanças normativas:** regras e prazos precisam ser atualizados pelos responsáveis, não presumidos pelo sistema.
+
+Por isso, a implantação deve ser gradual, com piloto em um serviço específico, avaliação de resultados e possibilidade de revisão ou interrupção caso os controles não sejam suficientes.
 
 ## 3. Análise ética
 
@@ -302,3 +373,13 @@ Caso a adesão ou os resultados fiquem abaixo do esperado, o atendimento presenc
 * ANPD. **Guia Orientativo: Tratamento de Dados Pessoais pelo Poder Público**. Autoridade Nacional de Proteção de Dados. [https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia_orientativo_tratamento_de_dados_pessoais_pelo_poder_publico](https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia_orientativo_tratamento_de_dados_pessoais_pelo_poder_publico)
 
 * BRASIL. **Lei nº 12.527, de 18 de novembro de 2011 — Lei de Acesso à Informação (LAI)**. Presidência da República, 2011. [https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm)
+
+*  BRASIL. Ministério da Gestão e da Inovação em Serviços Públicos. **Automação de Serviços**. Governo Digital. Disponível em: [https://www.gov.br/governodigital/pt-br/estrategias-e-governanca-digital/transformacao-digital/ferramentas/automacao-de-servicos/automacao-de-servicos.]
+
+* BRASIL. Ministério da Gestão e da Inovação em Serviços Públicos. **Plano de Transformação Digital (PTD)**. Governo Digital, 16 maio 2024. Disponível em: [https://www.gov.br/governodigital/pt-br/estrategias-e-governanca-digital/sisp/guia-do-gestor/guia-orientativo-de-padroes-e-fluxos-das-tecnologias-de-transformacao-digital/plano-de-transformacao-digital-ptd.]
+
+* BRASIL. Ministério da Gestão e da Inovação em Serviços Públicos. **Lei do Governo Digital**. Disponível em: [https://www.gov.br/governodigital/pt-br/legislacao/lei-do-governo-digital.]
+
+* BRASIL. Autoridade Nacional de Proteção de Dados. **Guia orientativo: Tratamento de dados pessoais pelo Poder Público**. Publicado em 22 nov. 2024; modificado em 23 jan. 2025. Disponível em: [https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia_orientativo_tratamento_de_dados_pessoais_pelo_poder_publico.]
+
+* W3C. **Web Content Accessibility Guidelines (WCAG) 2.2**. Recomendação de 12 dez. 2024. Disponível em: [https://www.w3.org/TR/wcag/.]
