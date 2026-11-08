@@ -425,3 +425,17 @@ Caso a adesão ou os resultados fiquem abaixo do esperado, o atendimento presenc
 * BRASIL. Autoridade Nacional de Proteção de Dados. **Guia orientativo: Tratamento de dados pessoais pelo Poder Público**. Publicado em 22 nov. 2024; modificado em 23 jan. 2025. Disponível em: [https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia_orientativo_tratamento_de_dados_pessoais_pelo_poder_publico.]
 
 * W3C. **Web Content Accessibility Guidelines (WCAG) 2.2**. Recomendação de 12 dez. 2024. Disponível em: [https://www.w3.org/TR/wcag/.]
+
+* IBGE. PNAD Contínua: Acesso à Internet e à televisão e posse de telefone móvel celular para uso pessoal 2025. Agência de Notícias IBGE, 2 jul. 2026. Disponível em: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/47408-proporcao-de-usuarios-da-internet-no-pais-ultrapassou-90-da-populacao-de-10-anos-ou-mais-em-2025
+
+* IBGE. Censo Demográfico 2022: Pessoas com Deficiência e Pessoas Diagnosticadas com Transtorno do Espectro Autista – Resultados preliminares da amostra. Agência de Notícias IBGE, 23 maio 2025. Disponível em: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/43463-censo-2022-brasil-tem-14-4-milhoes-de-pessoas-com-deficiencia
+
+* AÇÃO EDUCATIVA; INSTITUTO PAULO MONTENEGRO. Indicador de Alfabetismo Funcional (Inaf) 2024/2025. Maio de 2025. Disponível em: https://alfabetismofuncional.org.br/
+
+* CGI.br / CETIC.br. Pesquisa TIC Domicílios. Comitê Gestor da Internet no Brasil, 2025. Disponível em: https://cetic.br/pt/pesquisa/domicilios/
+
+* BRASIL. Lei nº 13.146, de 6 de julho de 2015 — Lei Brasileira de Inclusão da Pessoa com Deficiência. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm
+
+* BRASIL. Lei nº 14.129, de 29 de março de 2021 — Lei do Governo Digital. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14129.htm
+
+* BRASIL. Ministério do Planejamento, Orçamento e Gestão. eMAG — Modelo de Acessibilidade em Governo Eletrônico, versão 3.1. 2014. Disponível em: https://emag.governoeletronico.gov.br
