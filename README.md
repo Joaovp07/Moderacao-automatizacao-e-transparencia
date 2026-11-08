@@ -20,26 +20,21 @@
 
 ### 1.1 Quem é afetado, onde e quanto
 
-A moderação automatizada de conteúdo impacta diretamente bilhões de usuários de plataformas digitais globalmente e no Brasil, com efeitos desproporcionais sobre criadores de conteúdo, ativistas, minorias representativas e pequenos empreendedores.
-
-* **Volume de Conteúdo Afetado:** Estima-se que as principais plataformas de redes sociais removam proativamente mais de 100 milhões de conteúdos por trimestre por meio de filtros automatizados. Contudo, relatórios de transparência decorrentes do *Digital Services Act (DSA)* revelam que centenas de milhares de decisões tomadas por IA envolvem falsos positivos diários.
-* **Impacto no Brasil:** Pesquisas do *InternetLab* e do *CGI.br / NIC.br* apontam que usuários no Brasil enfrentam retenção indevida de contas e restrição silenciosa de alcance (*shadowbanning*) sem notificação detalhada. A super-moderação atinge desproporcionalmente o contra-discurso, a sátira e dialetos regionais.
-* **Danos Econômicos e Liberdade de Expressão:** Empreendedores dependentes de comércio social perdem receitas imediatas ao sofrerem bloqueios de conta não fundamentados, enquanto o devido processo digital é cerceado pela ausência de canais de apelação eficientes.
+O problema da opacidade, lentidão e falta de transparência atinge diretamente os cidadãos que dependem da prefeitura para solicitações administrativas urbanas (ex: alvarás, zeladoria, licenciamentos). Embora 41,1% dos usuários já utilizem serviços públicos pela internet (IBGE, 2026), a maioria enfrenta processos fragmentados. A falta de transparência cria uma "caixa-preta" burocrática: o cidadão abre o pedido, mas não sabe os critérios, o status real ou o motivo exato de eventuais indeferimentos. Isso afeta desproporcionalmente populações de menor escolaridade e pequenos empreendedores locais, que perdem tempo e recursos aguardando resoluções imprevisíveis.
 
 ### 1.2 Causas
 
-As falhas de moderação automatizada decorrem de fatores estruturais e, prioritariamente, de escolhas e limitações arquiteturais de tecnologia:
+As causas que contribuem para esse cenário são majoritariamente tecnológicas e de decisões de projeto:
 
-1. **Efeito Caixa-Preta (*Black-Box*) dos Modelos:** O uso de redes profundas (NLP/LLMs) impede a rastreabilidade da decisão. O sistema classifica uma publicação como "violação de diretrizes", mas não fornece o motivo lógico ou o trecho exato.
-2. **Vieses de Treinamento e Incompetência Contextual:** Algoritmos são treinados com conjuntos de dados (*datasets*) predominantemente anglófonos ou centralizados, incapazes de discernir ironia, linguagem figurada, gírias locais e ressignificação de termos.
-3. **Limitações de Correspondência de Hash:** Filtros de assinaturas digitais (*hashes* exatas ou perceptuais) falham diante de conteúdos inéditos ou ligeiramente modificados e não avaliam o contexto em que a mídia foi compartilhada (ex: denúncia de um crime vs. apologia ao crime).
-4. **Pipeline de Apelação Automatizado:** Para reduzir custos de operação, as plataformas utilizam os mesmos algoritmos classificadores para julgar os recursos dos usuários, eliminando a revisão humana qualificada.
+* **Sistemas legados e isolados:** Os dados ficam presos em secretarias diferentes, exigindo que o cidadão seja o "mensageiro" de seus próprios documentos entre os departamentos.
+* **Automação opaca na gestão pública:** Quando prefeituras tentam modernizar a triagem adotando sistemas "de prateleira", frequentemente criam fluxos automatizados onde pedidos são negados ou rebaixados sem explicabilidade, gerando um ambiente de moderação administrativa excludente.
+* **Falta de regras de negócio sistêmicas:** A ausência de um motor de regras (*workflow*) centralizado faz com que o andamento dependa da intervenção manual em planilhas não padronizadas e e-mails paralelos.
 
 ### 1.3 O que já existe e por que não basta
 
-* **Filtros de Heurística e Classificadores Nativos:** Plataformas utilizam algoritmos próprios baseados em inteligência artificial generativa e aprendizado de máquina para triagem em tempo real. **Por que não basta:** Operam sob segredo industrial, sem transparência algorítmica, auditoria externa ou explicabilidade ao usuário afetado.
-* **Portais Legados de Denúncia:** Sistemas de notificação e retirada (*notice and take-down*) dependentes de denúncias de usuários. **Por que não basta:** Sofrem com coordenação de ataques (*brigading*), falta de feedback transparente sobre a decisão final e demora no processamento manual de apelações.
-* **Estruturas de Autorregulação das Plataformas:** Conselhos de segurança e relatórios voluntários de transparência. **Por que não basta:** Apresentam métricas agregadas que escondem taxas reais de erro e falsos positivos, além de carecerem de conformidade com normativas de devido processo digital como o DSA europeu e as exigências em debate no PL 2630/2020 e Art. 19 do Marco Civil da Internet no Brasil.
+* **Balcões físicos e protocolos em papel:** Processos tradicionais de atendimento. **Por que não basta:** Exigem deslocamento, possuem alto custo de operação, são propensos a perdas de documentos e não oferecem rastreabilidade em tempo real.
+* **Sistemas de Ouvidoria genéricos (ex: e-SIC / e-OUV):** Portais focados em acesso à informação pública e denúncias. **Por que não basta:** Servem como canal de registro, mas não gerenciam o fluxo de trabalho integrado das secretarias para a execução e acompanhamento de serviços fim a fim.
+* **Sistemas de Inteligência Artificial para triagem pública:** Soluções que prometem prever demandas ou classificar pedidos de forma autônoma. **Por que não basta:** Introduzem vieses ocultos baseados em dados históricos (como dar prioridade a áreas centrais em detrimento de periferias) e retiram o servidor humano da validação, ferindo os princípios do devido processo e da transparência administrativa.
 
 
 ## 2. Proposta tecnológica
@@ -302,26 +297,19 @@ A referência técnica é a WCAG 2.2, nível AA (W3C, 2024), complementada pelo 
 
 ### 5.1 Impacto ambiental da solução
 
-O processamento de Inteligência Artificial para moderação em larga escala impõe uma expressiva pegada ecológica que demanda estratégias de *Green AI*:
+Como o projeto PIST baseia-se em um motor de regras determinísticas claras e rejeita propositalmente a adoção de Modelos de Linguagem (LLMs) e Inteligência Artificial preditiva, a plataforma já evita o massivo custo energético e a enorme pegada hídrica inerentes à inferência de IA. Ainda assim, a operação em nuvem (armazenamento, bancos de dados, servidores web) gera impacto ambiental devido ao consumo elétrico dos data centers e ao descarte de hardware (*e-waste*).
 
-* **Consumo Energético de Data Centers:** A inferência contínua em tempo real usando modelos de grande porte (LLMs) gera consumo elétrico intensivo e altas emissões de CO₂ em infraestruturas de nuvem.
-* **Pegada Hídrica e Descarte de Hardware (E-Waste):** O resfriamento de servidores de GPU/TPU consome recursos hídricos significativos, enquanto a rápida substituição de hardware de aceleração acelera o acúmulo de lixo eletrônico.
-* **Escolhas Tecnológicas de TI Verde para Mitigação:**
-* **Arquitetura de Filtragem em Camadas:** Uso de algoritmos de baixo custo energético (*hashing* e regras heurísticas) na primeira etapa de triagem, acionando modelos complexos de NLP/LLM apenas para conteúdos limítrofes.
-* **Destilação de Modelos (*Model Distillation*):** Emprego de modelos compactos (*Small Language Models* - SLMs) otimizados para inferência local com redução de até 90% no consumo energético por requisição.
-* **Provedores com Energia Renovável:** Hospedagem em data centers com certificação PUE (*Power Usage Effectiveness*) otimizada e alimentados por fontes 100% renováveis.
+Escolhas tecnológicas para reduzir o impacto (TI Verde):
 
-
+* **Arquitetura de Nuvem Eficiente (*Serverless*):** Utilização de serviços autoescaláveis que alocam recursos computacionais apenas no momento de uso, evitando o desperdício de manter máquinas virtuais ociosas ligadas 24 horas por dia.
+* **Minimização de Armazenamento:** Políticas de compressão e retenção rígida de documentos evitam o armazenamento redundante de arquivos pesados, economizando capacidade de discos físicos (redução de hardware) e energia nos servidores.
+* **Provedores de Nuvem Verdes:** Hospedagem em data centers com alta Eficácia no Uso de Energia (PUE) e compromissos firmados de abastecimento com 100% de fontes de energia renovável.
 
 ### 5.2 Sustentabilidade do projeto
 
-A perenidade da solução envolve sustentabilidade operacional, financeira e humana:
-
-* **Quem Mantém:** Equipe técnica multidisciplinar composta por Engenheiros de Dados (manutenção do pipeline e *datasets*), Especialistas em Cibersegurança/Privacidade (conformidade LGPD e auditoria de APIs) e Moderadores Humanos de apoio para casos de apelação.
-* **Sustentabilidade Humana e Social:** Estabelecimento de jornadas de trabalho controladas, rotação de tarefas e suporte de saúde mental contínuo para revisores humanos terceirizados, evitando a superexposição a conteúdos nocivos e garantindo o trabalho digno na cadeia de suprimentos de IA.
-* **Modelo Financeiro:** Custeio viabilizado por taxa de governança de conformidade cobrada de plataformas integradas, fundos institucionais de fomento à transparência algorítmica ou parcerias público-privadas de interesse social.
-* **Após o Primeiro Ano:** Transição para um modelo de governança aberta e multissetorial (*open-source* com API de auditoria para pesquisadores acadêmicos do Data Privacy Brasil, InternetLab e ITS Rio), garantindo atualizações contínuas de segurança e reavaliação periódica dos modelos de viés.
-
+* **Quem mantém:** A Secretaria de Tecnologia da Informação do município (ou órgão correlato), que ficará responsável pelo suporte de Nível 3, gerenciamento da nuvem e atualização do motor de regras.
+* **Quem paga:** O orçamento da própria prefeitura municipal. O sistema se paga a médio prazo através da drástica redução de custos com papel, impressão, armazenamento físico de arquivos e pela otimização das horas de trabalho dos servidores.
+* **O que acontece depois do primeiro ano:** O foco do projeto transiciona da implantação tecnológica para a governança. As equipes focarão na capacitação contínua dos servidores, no monitoramento dos painéis de transparência pública e na atualização das regras automatizadas para refletir eventuais mudanças nas leis municipais.
 
 ## 6. Impacto esperado
 
