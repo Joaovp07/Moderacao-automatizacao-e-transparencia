@@ -130,7 +130,7 @@ A plataforma deverá seguir a Lei Geral de Proteção de Dados (Lei nº 13.709/2
 **Contagem:** [N] caracteres
 
 
-4. Acessibilidade e inclusão digital
+## 4. Acessibilidade e inclusão digital
 
 O PIST nasce digital, mas o público de uma prefeitura é a população inteira, inclusive quem não está (ou está mal) conectado. Os números mostram que o problema não é só ter internet, e sim saber usá-la para resolver a vida:
 
@@ -156,26 +156,26 @@ A plataforma deverá seguir a Lei Brasileira de Inclusão (Lei nº 13.146/2015) 
 | Pessoas com baixa escolaridade | Formulários, termos técnicos e mensagens de erro difíceis de entender. | Linguagem simples, ícones com texto, uma pergunta por vez, leitura em voz alta e atendimento humano. |
 | Pessoas sem conta gov.br prata ou ouro | Login complexo pode impedir o primeiro acesso. | Acesso com CPF e código por SMS; gov.br exigido só quando a lei pedir identificação forte. |
 
-4.2 Requisitos de acessibilidade
+## 4.2 Requisitos de acessibilidade
 
 A referência técnica é a WCAG 2.2, nível AA (W3C, 2024), complementada pelo eMAG (Modelo de Acessibilidade em Governo Eletrônico), que é o padrão dos órgãos públicos brasileiros. Cada requisito abaixo vira critério de aceite: a funcionalidade só vai para produção se passar.
 
 #	Requisito concreto no PIST	Critério WCAG 2.2
-R1	Todo ícone, imagem e botão gráfico tem texto alternativo; os gráficos do painel público têm tabela de dados equivalente	1.1.1 Conteúdo não textual (A)
-R2	O formulário usa rótulos reais (<label>), títulos em ordem lógica e campos agrupados, para o leitor de tela entender a estrutura	1.3.1 Informações e relações (A); 3.3.2 Rótulos ou instruções (A)
-R3	O status do pedido nunca é indicado só por cor (ex.: "Em análise" escrito, não só um ponto amarelo)	1.4.1 Uso de cor (A)
-R4	Contraste mínimo de 4,5:1 para texto e 3:1 para bordas de campos, botões e ícones	1.4.3 Contraste mínimo (AA); 1.4.11 Contraste não textual (AA)
-R5	A página funciona com o texto ampliado em 200% e em tela de 320 px de largura sem rolagem horizontal	1.4.4 Redimensionar texto (AA); 1.4.10 Refluxo (AA)
-R6	Todas as funções (abrir, anexar, acompanhar, contestar) funcionam só pelo teclado, com foco sempre visível e nunca escondido por banners ou cabeçalhos fixos	2.1.1 Teclado (A); 2.4.7 Foco visível (AA); 2.4.11 Foco não obscurecido (AA)
-R7	Botões e links com área de toque de no mínimo 24 × 24 px (o projeto adota 44 × 44 px para facilitar o uso por idosos)	2.5.8 Tamanho do alvo – mínimo (AA)
-R8	A sessão avisa antes de expirar e permite estender o tempo; o rascunho é salvo	2.2.1 Tempo ajustável (A)
-R9	Erros são explicados em texto, com a sugestão de correção ("O CPF tem 11 números; faltam 2")	3.3.1 Identificação do erro (A); 3.3.3 Sugestão de erro (AA)
-R10	O sistema não pede de novo um dado já informado no mesmo pedido (endereço, telefone)	3.3.7 Entrada redundante (A)
-R11	O login não exige teste cognitivo (sem CAPTCHA de quebra-cabeça e sem memorizar senha); usa código por SMS ou gov.br, com colar/preencher automático liberado	3.3.8 Autenticação acessível – mínimo (AA)
-R12	O botão "Falar com uma pessoa" e o telefone de ajuda aparecem sempre no mesmo lugar em todas as telas	3.2.6 Ajuda consistente (A)
-R13	Mudanças de status e mensagens de "pedido enviado" são anunciadas pelo leitor de tela sem mudar o foco	4.1.3 Mensagens de status (AA)
-R14	Componentes personalizados (menus, abas, upload) expõem nome, função e estado corretos para tecnologias assistivas	4.1.2 Nome, função, valor (A)
-R15	Textos escritos para leitura até o nível do ensino fundamental, revisados com usuários de baixa escolaridade (meta além do AA)
+* R1	Todo ícone, imagem e botão gráfico tem texto alternativo; os gráficos do painel público têm tabela de dados equivalente	1.1.1 Conteúdo não textual (A)
+* R2	O formulário usa rótulos reais (<label>), títulos em ordem lógica e campos agrupados, para o leitor de tela entender a estrutura	1.3.1 Informações e relações (A); 3.3.2 Rótulos ou instruções (A)
+* R3	O status do pedido nunca é indicado só por cor (ex.: "Em análise" escrito, não só um ponto amarelo)	1.4.1 Uso de cor (A)
+* R4	Contraste mínimo de 4,5:1 para texto e 3:1 para bordas de campos, botões e ícones	1.4.3 Contraste mínimo (AA); 1.4.11 Contraste não textual (AA)
+* R5	A página funciona com o texto ampliado em 200% e em tela de 320 px de largura sem rolagem horizontal	1.4.4 Redimensionar texto (AA); 1.4.10 Refluxo (AA)
+* R6	Todas as funções (abrir, anexar, acompanhar, contestar) funcionam só pelo teclado, com foco sempre visível e nunca escondido por banners ou cabeçalhos fixos	2.1.1 Teclado (A); 2.4.7 Foco visível (AA); 2.4.11 Foco não obscurecido (AA)
+* R7	Botões e links com área de toque de no mínimo 24 × 24 px (o projeto adota 44 × 44 px para facilitar o uso por idosos)	2.5.8 Tamanho do alvo – mínimo (AA)
+* R8	A sessão avisa antes de expirar e permite estender o tempo; o rascunho é salvo	2.2.1 Tempo ajustável (A)
+* R9	Erros são explicados em texto, com a sugestão de correção ("O CPF tem 11 números; faltam 2")	3.3.1 Identificação do erro (A); 3.3.3 Sugestão de erro (AA)
+* R10	O sistema não pede de novo um dado já informado no mesmo pedido (endereço, telefone)	3.3.7 Entrada redundante (A)
+* R11	O login não exige teste cognitivo (sem CAPTCHA de quebra-cabeça e sem memorizar senha); usa código por SMS ou gov.br, com colar/preencher automático liberado	3.3.8 Autenticação acessível – mínimo (AA)
+* R12	O botão "Falar com uma pessoa" e o telefone de ajuda aparecem sempre no mesmo lugar em todas as telas	3.2.6 Ajuda consistente (A)
+* R13	Mudanças de status e mensagens de "pedido enviado" são anunciadas pelo leitor de tela sem mudar o foco	4.1.3 Mensagens de status (AA)
+* R14	Componentes personalizados (menus, abas, upload) expõem nome, função e estado corretos para tecnologias assistivas	4.1.2 Nome, função, valor (A)
+* R15	Textos escritos para leitura até o nível do ensino fundamental, revisados com usuários de baixa escolaridade (meta além do AA)
 
 
 ## 5. Sustentabilidade
@@ -207,23 +207,24 @@ A perenidade da solução envolve sustentabilidade operacional, financeira e hum
 
 O piloto roda em um único serviço municipal durante 12 meses. Antes de ligar o PIST, a equipe mede por 3 meses a linha de base do processo atual (tempo de resposta, volume por canal, reclamações na ouvidoria), para que toda meta abaixo seja comparada com a situação real e não com uma estimativa.
 
-## 6.1 Indicadores
+### 6.1 Indicadores
 
-Indicador	Como medir	Meta	Prazo
-Tempo médio entre a abertura e a resposta final do pedido	Registros de data e hora do próprio PIST, comparados à linha de base	Redução de 40%	6 meses
-Pedidos dentro do prazo legal ou de referência do serviço	% de pedidos concluídos dentro do prazo, extraído do PIST	≥ 90%	6 meses
-Adesão ao canal digital	% de pedidos abertos online sobre o total do serviço	≥ 50%, sem queda no número de atendimentos presenciais disponíveis	12 meses
-Taxa de conclusão do formulário online	Pedidos enviados ÷ pedidos iniciados (dados de uso anonimizados)	≥ 80%	3 meses
-Equidade entre canais	Diferença do tempo médio de resposta entre pedidos do balcão e pedidos online	≤ 10%	6 meses (acompanhado mensalmente)
-Satisfação do cidadão	Pesquisa de 1 pergunta (nota de 1 a 5) ao final do atendimento, por SMS, web ou no balcão	Média ≥ 4,0 no geral e ≥ 4,0 separadamente entre pessoas com 60+ e pessoas com deficiência	6 meses
-Qualidade da automação	% de encaminhamentos automáticos corrigidos pelo servidor e % de decisões revertidas após contestação	Correções ≤ 10% e reversões ≤ 5%	Mensal, a partir do 3º mês
-Resposta às contestações	Tempo médio entre a contestação do cidadão e a resposta humana	≤ 10 dias úteis	3 meses
-Acessibilidade	Erros críticos nos testes automáticos e manuais de WCAG 2.2 AA	Zero erro crítico em cada versão publicada	Contínuo
-Reclamações na ouvidoria sobre o serviço piloto	Registros da ouvidoria municipal, comparados à linha de base	Redução de 30%	12 meses
-Transparência ativa	Defasagem dos dados do painel público e número de acessos ao painel	Dados atualizados com no máximo 7 dias de atraso; acessos crescentes trimestre a trimestre	3 meses
-Disponibilidade do sistema	Monitoramento de uptime	≥ 99,5% ao mês	Contínuo
+Os indicadores serão medidos a partir dos registros do próprio PIST e comparados à linha de base do processo atual, com os resultados publicados no painel público.
 
-Os indicadores são publicados no próprio painel público. Assim, o PIST presta contas sobre si mesmo com a mesma transparência que promete para a prefeitura.
+| Indicador | Como medir | Meta | Prazo |
+|---|---|---|---|
+| Tempo médio de resposta | Intervalo entre a abertura e a resposta final, registrado no PIST. | Redução de 40%. | 6 meses. |
+| Pedidos dentro do prazo | Percentual de pedidos concluídos no prazo do serviço. | No mínimo 90%. | 6 meses. |
+| Adesão ao canal digital | Percentual de pedidos abertos online. | No mínimo 50%, sem reduzir o atendimento presencial. | 12 meses. |
+| Conclusão do formulário | Pedidos enviados divididos pelos pedidos iniciados. | No mínimo 80%. | 3 meses. |
+| Equidade entre canais | Diferença no tempo de resposta entre pedidos do balcão e online. | No máximo 10%. | 6 meses. |
+| Satisfação do cidadão | Nota de 1 a 5 ao final do atendimento, em todos os canais. | Média mínima de 4, também entre pessoas 60+ e com deficiência. | 6 meses. |
+| Qualidade da automação | Percentual de encaminhamentos corrigidos e de decisões revertidas. | Correções até 10% e reversões até 5%. | Mensal, a partir do 3º mês. |
+| Resposta às contestações | Tempo entre a contestação e a resposta humana. | Até 10 dias úteis. | 3 meses. |
+| Acessibilidade | Erros críticos nos testes da WCAG 2.2 AA. | Zero em cada versão publicada. | Contínuo. |
+| Reclamações na ouvidoria | Registros da ouvidoria sobre o serviço piloto. | Redução de 30%. | 12 meses. |
+| Atualização do painel público | Atraso entre o registro do dado e sua publicação. | Até 7 dias. | 3 meses. |
+| Disponibilidade do sistema | Monitoramento de funcionamento (uptime). | No mínimo 99,5% ao mês. | Contínuo. |
 
 ## 6.2 Como os usuários serão ouvidos
 
@@ -236,17 +237,18 @@ Revisão de 12 meses: relatório público com os resultados, o que mudou a parti
 
 Critério para ampliar: o PIST só vai para um segundo serviço se, ao final do piloto, a maior parte das metas da tabela 6.1 tiver sido atingida e nenhum grupo da seção 4.1 estiver em situação pior do que antes (satisfação menor ou tempo de resposta maior que o dos demais).
 
-## 6.3 Se a solução não pegar
+### 6.3 Se a solução não pegar
 
-Risco de não pegar	Sinal de alerta	O que fazer
-Baixa adesão ao canal digital	Menos de 20% dos pedidos online após 6 meses	Investigar o motivo com as pesquisas e oficinas (desconhecimento, desconfiança, dificuldade de uso), reforçar a divulgação por canais de bairro (rádio comunitária, UBS, escolas, lideranças locais) e simplificar o fluxo. O balcão continua funcionando, então o serviço não é prejudicado.
-Servidores resistem ou contornam o sistema	Pedidos tratados fora do PIST, registros incompletos	Envolver os servidores desde o desenho, treinar no horário de trabalho, ter um "servidor de referência" por setor e mostrar o ganho para eles (menos retrabalho, fila organizada).
-A automação erra demais ou gera desconfiança	Correções acima de 10% ou reversões acima de 5%	Suspender a regra automática problemática e voltar à triagem manual daquele tipo de pedido até revisar a regra; publicar o que aconteceu no painel. A decisão final já é sempre humana, então o erro não chega ao cidadão como decisão definitiva.
-Exclusão de quem já tinha dificuldade	Satisfação ou tempo de resposta pior para 60+, pessoas com deficiência ou pedidos do balcão	Tratar como falha grave: priorizar a correção antes de qualquer nova funcionalidade e reforçar o atendimento assistido.
-Falta de orçamento ou troca de gestão	Corte de verba, mudança de prioridades	Código aberto e documentação completa, para que a prefeitura não fique presa a um fornecedor; e resultados do piloto publicados, que servem de argumento para manter o projeto.
+Caso a adesão ou os resultados fiquem abaixo do esperado, o atendimento presencial continuará funcionando normalmente e o PIST só será ampliado depois de corrigidos os problemas.
 
-Se, ao fim dos 12 meses, as metas principais não forem atingidas mesmo após os ajustes, a recomendação é não ampliar: manter o que funcionou (por exemplo, o protocolo único e o painel público) e documentar as lições aprendidas em relatório público, para que outra prefeitura ou outra equipe não repita os mesmos erros.
-
+| Risco | Sinal de alerta | O que fazer |
+|---|---|---|
+| Baixa adesão ao canal digital | Menos de 20% dos pedidos online em 6 meses. | Investigar os motivos, simplificar o fluxo e divulgar em rádios comunitárias, UBS e escolas. |
+| Resistência dos servidores | Pedidos tratados fora do PIST ou com registro incompleto. | Envolver os servidores no desenho, treinar no horário de trabalho e ter um servidor de referência por setor. |
+| Erros da automação | Correções acima de 10% ou reversões acima de 5%. | Suspender a regra com problema, voltar à triagem manual e publicar o ocorrido no painel. |
+| Exclusão de grupos vulneráveis | Satisfação ou tempo de resposta pior para pessoas 60+, com deficiência ou atendidas no balcão. | Priorizar a correção antes de novas funções e reforçar o atendimento assistido. |
+| Falta de orçamento ou troca de gestão | Corte de verba ou mudança de prioridades. | Manter código aberto, documentação completa e resultados publicados para justificar a continuidade. |
+| Metas não atingidas em 12 meses | Principais indicadores abaixo da meta mesmo após ajustes. | Não ampliar, manter o que funcionou e publicar as lições aprendidas. |
 
 ## 7. Quadro de decisões (mínimo 5)
 
