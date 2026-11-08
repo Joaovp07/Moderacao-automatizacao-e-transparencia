@@ -396,7 +396,26 @@ Caso a adesão ou os resultados fiquem abaixo do esperado, o atendimento presenc
 **Feedback dos colegas**
  demonstrou excelente domínio técnico ao estruturar o banco de dados da PIST, garantindo que o fluxo de informações entre os protocolos e o painel de transparência funcionasse sem gargalos. Sua participação foi fundamental para separar os dados operacionais dos indicadores públicos de forma segura. Como ponto de desenvolvimento para os próximos projetos, sugerimos que ele lidere também a documentação das APIs de integração com sistemas externos.
 
-### 8.2 [Próximo integrante] — [Área]
+### 8.2 Bruno Rodrigues — Gestão
+
+**Papel no projeto:** fui responsável pela seção 7 (Quadro de decisões), em que consolidei as principais escolhas do projeto PIST, as alternativas consideradas e a justificativa de cada uma, sempre com base nas análises das demais seções. Também fiz o levantamento e a conferência das fontes que sustentam essas decisões (IBGE, Inaf, CGI.br, LGPD, LAI, Lei do Governo Digital, Lei Brasileira de Inclusão, WCAG 2.2 e eMAG) e organizei as referências para que cada dado citado no trabalho tivesse origem verificável.
+
+**Plano de desenvolvimento**
+
+| Competência que a solução exige | Técnica ou comportamental | Já tenho? |
+|---|---|---|
+| Tomada de decisão estruturada, comparando alternativas e justificando escolhas | Comportamental | Parcial (ainda não tenho experiência profissional na área, mas apliquei em projetos acadêmicos e neste trabalho, no quadro de decisões) |
+| Pesquisa e verificação de fontes e dados para embasar decisões de gestão | Técnica | Parcial (pratiquei em projetos e no levantamento de referências do PIST; preciso me aprofundar em análise de indicadores públicos) |
+| Mapeamento de processos e gestão de projetos públicos (prazos, responsáveis, implantação gradual) | Técnica | Não (não tenho experiência profissional; conheço os conceitos pelos estudos e projetos) |
+| Comunicação e alinhamento com áreas técnicas (Dados, Cloud, Cibersegurança) | Comportamental | Sim (atuei integrando as decisões das diferentes áreas no quadro de decisões) |
+
+**Metas SMART (6 a 12 meses)**
+
+Concluir um curso de gestão de projetos com foco em metodologias ágeis e mapeamento de processos (BPMN) e aplicar o que aprendi mapeando o fluxo completo de um processo real (acadêmico ou de estágio), documentando etapas, responsáveis e prazos, até novembro de 2027.
+
+**Feedback dos colegas**
+
+Recebi um feedback positivo dos colegas, que destacaram a organização do quadro de decisões, por conectar as escolhas do projeto às análises das demais seções, e o meu cuidado em buscar e conferir as fontes utilizadas. Como ponto de desenvolvimento, me sugeriram buscar experiência prática em gestão de projetos, como estágio ou projetos de extensão, para complementar minha base acadêmica.
 ### 8.3 [Próximo integrante] — [Área]
 ### 8.4 [Próximo integrante (se houver)] — [Área]
 ### 8.5 [Próximo integrante (se houver)] — [Área]
