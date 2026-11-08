@@ -273,26 +273,31 @@ A plataforma deverá seguir a Lei Brasileira de Inclusão (Lei nº 13.146/2015) 
 
 ### 4.2 Requisitos de acessibilidade
 
-A referência técnica é a WCAG 2.2, nível AA (W3C, 2024), complementada pelo eMAG (Modelo de Acessibilidade em Governo Eletrônico), que é o padrão dos órgãos públicos brasileiros. Cada requisito abaixo vira critério de aceite: a funcionalidade só vai para produção se passar.
+A referência técnica é a **WCAG 2.2, nível AA** (W3C, 2024), complementada pelo eMAG (Modelo de Acessibilidade em Governo Eletrônico), que é o padrão dos órgãos públicos brasileiros. Cada requisito abaixo vira critério de aceite: a funcionalidade só vai para produção se passar.
 
-### Requisito concreto no PIST	Critério WCAG 2.2
+| # | Requisito concreto no PIST | Critério WCAG 2.2 |
+|---|---|---|
+| R1 | Todo ícone, imagem e botão gráfico tem texto alternativo; os gráficos do painel público têm tabela de dados equivalente. | 1.1.1 Conteúdo não textual (A) |
+| R2 | O formulário usa rótulos reais (`<label>`), títulos em ordem lógica e campos agrupados, para o leitor de tela entender a estrutura. | 1.3.1 Informações e relações (A); 3.3.2 Rótulos ou instruções (A) |
+| R3 | O status do pedido nunca é indicado só por cor (ex.: "Em análise" escrito, não só um ponto amarelo). | 1.4.1 Uso de cor (A) |
+| R4 | Contraste mínimo de 4,5:1 para texto e 3:1 para bordas de campos, botões e ícones. | 1.4.3 Contraste mínimo (AA); 1.4.11 Contraste não textual (AA) |
+| R5 | A página funciona com o texto ampliado em 200% e em tela de 320 px de largura sem rolagem horizontal. | 1.4.4 Redimensionar texto (AA); 1.4.10 Refluxo (AA) |
+| R6 | Todas as funções (abrir, anexar, acompanhar, contestar) funcionam só pelo teclado, com foco sempre visível e nunca escondido por banners ou cabeçalhos fixos. | 2.1.1 Teclado (A); 2.4.7 Foco visível (AA); 2.4.11 Foco não obscurecido (AA) |
+| R7 | Botões e links com área de toque de no mínimo 24 × 24 px (o projeto adota 44 × 44 px para facilitar o uso por idosos). | 2.5.8 Tamanho do alvo – mínimo (AA) |
+| R8 | A sessão avisa antes de expirar e permite estender o tempo; o rascunho é salvo. | 2.2.1 Tempo ajustável (A) |
+| R9 | Erros são explicados em texto, com a sugestão de correção ("O CPF tem 11 números; faltam 2"). | 3.3.1 Identificação do erro (A); 3.3.3 Sugestão de erro (AA) |
+| R10 | O sistema não pede de novo um dado já informado no mesmo pedido (endereço, telefone). | 3.3.7 Entrada redundante (A) |
+| R11 | O login não exige teste cognitivo (sem CAPTCHA de quebra-cabeça e sem memorizar senha); usa código por SMS ou gov.br, com colar/preencher automático liberado. | 3.3.8 Autenticação acessível – mínimo (AA) |
+| R12 | O botão "Falar com uma pessoa" e o telefone de ajuda aparecem sempre no mesmo lugar em todas as telas. | 3.2.6 Ajuda consistente (A) |
+| R13 | Mudanças de status e mensagens de "pedido enviado" são anunciadas pelo leitor de tela sem mudar o foco. | 4.1.3 Mensagens de status (AA) |
+| R14 | Componentes personalizados (menus, abas, upload) expõem nome, função e estado corretos para tecnologias assistivas. | 4.1.2 Nome, função, valor (A) |
+| R15 | Textos escritos para leitura até o nível do ensino fundamental, revisados com usuários de baixa escolaridade (meta além do AA). | 3.1.5 Nível de leitura (AAA) |
 
-* R1	Todo ícone, imagem e botão gráfico tem texto alternativo; os gráficos do painel público têm tabela de dados equivalente	1.1.1 Conteúdo não textual (A)
-* R2	O formulário usa rótulos reais (<label>), títulos em ordem lógica e campos agrupados, para o leitor de tela entender a estrutura	1.3.1 Informações e relações (A); 3.3.2 Rótulos ou instruções (A)
-* R3	O status do pedido nunca é indicado só por cor (ex.: "Em análise" escrito, não só um ponto amarelo)	1.4.1 Uso de cor (A)
-* R4	Contraste mínimo de 4,5:1 para texto e 3:1 para bordas de campos, botões e ícones	1.4.3 Contraste mínimo (AA); 1.4.11 Contraste não textual (AA)
-* R5	A página funciona com o texto ampliado em 200% e em tela de 320 px de largura sem rolagem horizontal	1.4.4 Redimensionar texto (AA); 1.4.10 Refluxo (AA)
-* R6	Todas as funções (abrir, anexar, acompanhar, contestar) funcionam só pelo teclado, com foco sempre visível e nunca escondido por banners ou cabeçalhos fixos	2.1.1 Teclado (A); 2.4.7 Foco visível (AA); 2.4.11 Foco não obscurecido (AA)
-* R7	Botões e links com área de toque de no mínimo 24 × 24 px (o projeto adota 44 × 44 px para facilitar o uso por idosos)	2.5.8 Tamanho do alvo – mínimo (AA)
-* R8	A sessão avisa antes de expirar e permite estender o tempo; o rascunho é salvo	2.2.1 Tempo ajustável (A)
-* R9	Erros são explicados em texto, com a sugestão de correção ("O CPF tem 11 números; faltam 2")	3.3.1 Identificação do erro (A); 3.3.3 Sugestão de erro (AA)
-* R10	O sistema não pede de novo um dado já informado no mesmo pedido (endereço, telefone)	3.3.7 Entrada redundante (A)
-* R11	O login não exige teste cognitivo (sem CAPTCHA de quebra-cabeça e sem memorizar senha); usa código por SMS ou gov.br, com colar/preencher automático liberado	3.3.8 Autenticação acessível – mínimo (AA)
-* R12	O botão "Falar com uma pessoa" e o telefone de ajuda aparecem sempre no mesmo lugar em todas as telas	3.2.6 Ajuda consistente (A)
-* R13	Mudanças de status e mensagens de "pedido enviado" são anunciadas pelo leitor de tela sem mudar o foco	4.1.3 Mensagens de status (AA)
-* R14	Componentes personalizados (menus, abas, upload) expõem nome, função e estado corretos para tecnologias assistivas	4.1.2 Nome, função, valor (A)
-* R15	Textos escritos para leitura até o nível do ensino fundamental, revisados com usuários de baixa escolaridade (meta além do AA)
+**Como garantir que os requisitos são cumpridos:**
 
+- **Automático:** verificação de acessibilidade (axe-core e Lighthouse) no pipeline de integração contínua; build com erro crítico de acessibilidade não é publicado.
+- **Manual:** a cada versão, roteiro de teste com teclado, NVDA, TalkBack e zoom de 200%.
+- **Com pessoas reais:** antes do piloto e a cada trimestre, testes de usabilidade com pelo menos 15 participantes, incluindo pessoas com 60 anos ou mais, pessoas com deficiência e pessoas com baixa escolaridade, recrutadas com apoio dos conselhos municipais da pessoa
 
 ## 5. Sustentabilidade
 
