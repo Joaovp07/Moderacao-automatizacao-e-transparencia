@@ -416,19 +416,51 @@ Concluir um curso de gestão de projetos com foco em metodologias ágeis e mapea
 **Feedback dos colegas**
 
 Recebi um feedback positivo dos colegas, que destacaram a organização do quadro de decisões, por conectar as escolhas do projeto às análises das demais seções, e o meu cuidado em buscar e conferir as fontes utilizadas. Como ponto de desenvolvimento, me sugeriram buscar experiência prática em gestão de projetos, como estágio ou projetos de extensão, para complementar minha base acadêmica.
-### 8.3 [Próximo integrante] — [Área]
+
+### 8.3 Denner de Paula Coutinho — Engenharia de Dados e Gestão
+
+**Papel no projeto:** fiquei com as seções 4 (Acessibilidade e inclusão digital) e 6 (Impacto esperado). Na 4, juntei os dados do IBGE, do CGI.br e do Inaf sobre quem está desconectado ou tem alguma deficiência e montei a tabela com cada grupo que pode ficar de fora do PIST e o que a plataforma faz por ele. Também traduzi a WCAG 2.2 nível AA e o eMAG em 15 requisitos (R1 a R15), que funcionam como critério de aceite: se a tela não passa, não vai para produção. Na 6, defini os 12 indicadores do piloto com meta e prazo, a linha de base de 3 meses medida antes de ligar o sistema, as etapas de escuta dos usuários, a regra para levar o PIST a um segundo serviço e a tabela do que fazer se a solução não pegar. Escrevi tudo em cima da proposta tecnológica da seção 2, para que cada indicador saia dos registros que a própria plataforma já guarda.
+
+**Plano de desenvolvimento**
+
+| Competência que a solução exige | Técnica ou comportamental | Já tenho? |
+|---|---|---|
+| Definir indicadores com linha de base, meta e prazo, calculados a partir dos registros do sistema | Técnica | Não (defini os indicadores do PIST no papel, mas nunca montei um pipeline que os calcule sozinho) |
+| Modelar dados para indicadores públicos, com consistência e agregação que não permita identificar ninguém | Técnica | Parcial (conheço modelagem e ETL na teoria; falta prática com dados reais e com anonimização) |
+| Aplicar e testar a WCAG 2.2 e o eMAG | Técnica | Parcial (estudei os critérios para escrever os requisitos, mas ainda não testei uma página com leitor de tela) |
+| Conduzir pesquisa com usuários, principalmente com idosos, pessoas com deficiência e quem usa pouco a internet | Comportamental | Não (planejei a escuta no trabalho, mas nunca fiz uma entrevista ou teste com usuário) |
+| Acompanhar riscos de um projeto, com sinais de alerta e plano B | Técnica | Parcial (montei a tabela da seção 6.3; falta aplicar num projeto com prazo e responsável de verdade) |
+| Trabalhar junto com quem cuida da parte técnica e da gestão | Comportamental | Sim (ajustei indicadores e requisitos com a proposta tecnológica e com as seções dos colegas) |
+
+**Metas SMART (6 a 12 meses)**
+
+1. Até junho de 2027, terminar um curso de engenharia de dados com SQL e ETL e publicar no GitHub um projeto que calcule pelo menos 5 indicadores a partir de uma base pública, como a PNAD Contínua, e os mostre num painel que se atualiza sozinho.
+2. Até março de 2027, auditar a acessibilidade de 3 sites de serviços públicos usando ferramentas automáticas e o leitor de tela NVDA, e publicar no GitHub um relatório com pelo menos 10 problemas, cada um ligado ao critério da WCAG 2.2 e com a correção sugerida.
+3. Até novembro de 2027, entrar num projeto prático (estágio, extensão ou voluntariado) em que eu faça pelo menos 5 entrevistas ou testes com usuários e acompanhe indicadores que eu mesmo defini, registrando o que mudou por causa dos resultados.
+
+**Feedback dos colegas**
+
+O Denner fez a ponte entre a proposta técnica e as pessoas que vão usar o PIST. A seção de acessibilidade começa pelos números de quem fica de fora e termina em requisitos que dá para testar, e a de impacto tem metas comparadas com uma linha de base real e uma regra objetiva para decidir se o projeto cresce ou não. Gostamos especialmente de ele ter incluído a comparação entre o atendimento no balcão e o online, para garantir que ninguém seja prejudicado por não usar a internet. Como próximo passo, sugerimos que ele leve isso para a área técnica dele, mostrando como os dados de cada indicador seriam coletados e processados no pipeline, e que procure experiência real de pesquisa com usuários para testar na prática o que planejou aqui.
+
 ### 8.4 [Próximo integrante (se houver)] — [Área]
 ### 8.5 [Próximo integrante (se houver)] — [Área]
 
 
 
 ## 9. Referências
+
 * CGI.br / NIC.br. *Sistematização da Consulta Pública sobre Regulação de Plataformas Digitais*. Comitê Gestor da Internet no Brasil, dezembro de 2024. [https://www.cgi.br/](https://www.cgi.br/)
+
 * DATA PRIVACY BRASIL. *Asymmetries of Information and Algorithmic Governance in Content Moderation*. Associação de Pesquisa Data Privacy Brasil, novembro de 2024. [https://www.dataprivacybr.org/](https://www.dataprivacybr.org/)
+
 * INTERNETLAB. *Pesquisa em Moderação de Conteúdo, Direitos Digitais e Liberdade de Expressão*. InternetLab, março de 2025. [https://internetlab.org.br/](https://internetlab.org.br/)
+
 * ITS RIO. *Governança de Plataformas Digitais e Transparência Algorítmica*. Instituto de Tecnologia e Sociedade do Rio de Janeiro, 2025. [https://itsrio.org/](https://itsrio.org/)
+
 * SCHWARTZ, Roy et al. *Green AI e Eficiência Energética em LLMs - Revisão Atualizada*. Communications of the ACM, 2025. [https://dl.acm.org/](https://dl.acm.org/)
+
 * UNIÃO EUROPEIA. *Digital Services Act (DSA) - Relatórios de Transparência e Implementação*. Jornal Oficial da União Europeia, 2024. [https://eur-lex.europa.eu/](https://eur-lex.europa.eu/)
+
 * BRASIL. **Lei nº 13.709, de 14 de agosto de 2018 — Lei Geral de Proteção de Dados Pessoais (LGPD)**. Presidência da República, 2018. [https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm)
 
 * ANPD. **Guia Orientativo: Tratamento de Dados Pessoais pelo Poder Público**. Autoridade Nacional de Proteção de Dados. [https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia_orientativo_tratamento_de_dados_pessoais_pelo_poder_publico](https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia_orientativo_tratamento_de_dados_pessoais_pelo_poder_publico)
