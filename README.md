@@ -1,93 +1,189 @@
-# Moderação Automatizada e Transparência: Entre o Controle do Discurso e o Direito de Saber (Dossiê 5)
+# [Título claro e específico da proposta]
 
-**Integrantes:**
-- Bruno Rodrigues | dev-rodrigues-bruno | Analista de Dados | 48101541
-- Caio Dal Pizzol Fonseca | caio-fonseca | Engenharia de Software | 47923121
-- Denner de Paula Coutinho | denner-coutinho | Analista de Dados | 48094030
-- João Vitor Pires Ribeiro | Joaovp07 | Engenheiro de Software | 47792591
-- Nicollas Guedes Da Silva Santos | Nicollas-Guedes | Analista de Dados | 48131334
 
-**Dossiê:** 5 - Moderação Automatizada e Transparência
-**Recorte:** Plataformas digitais no Brasil, focando em diversidade de usuários e transparência algorítmica.
+## Integrantes
 
----
 
-## 1. Análise do Problema
+| Nome completo (ordem alfabética) | GitHub | Área de carreira | RGM |
+|---|---|---|---|
+| [Nome] | [@usuario] | [Área] | [RGM] |
+
+
+**Dossiê:** [número e título]
+**Recorte:** [público, região ou etapa, com a justificativa; ou "sem recorte"]
+
+
+## 1. Análise do problema
+
 
 ### 1.1 Quem é afetado, onde e quanto
-- **Volume e dados estatísticos:** 84% dos brasileiros (156 milhões) acessam a internet, mas 18,6 milhões de Pessoas com Deficiência (8,9% da população acima de 2 anos) encontram barreiras severas: apenas 2,8% dos sites brasileiros e 10% dos portais públicos são plenamente acessíveis.
-- **Danos da moderação enviesada:** Casos análogos demonstrados na literatura (como o caso HireVue/Intuit com transcrição automática inadequada para candidatos surdos, ou vieses raciais/de gênero observados em modelos generativos que preferem nomes brancos em 85% dos casos).
+[Dados, com a fonte citada]
 
-### 1.2 Causas Tecnológicas
-1. **Modelos de Caixa-Preta (*Black Box*):** Falta de explicabilidade (XAI) na tomada de decisão sobre remoções ou restrições de alcance.
-2. **Dados Históricos Enviesados:** Treinamento em dados sem tratamento (*re-weighting*), que perpetua exclusões históricas e dialetais.
-3. **Ausência de Acessibilidade Nativa:** Falta de conformidade com os princípios POUR da WCAG desde a etapa de requisitos.
+
+### 1.2 Causas
+[Destaque para as causas tecnológicas: sistemas, dados, redes, decisões de projeto]
+
 
 ### 1.3 O que já existe e por que não basta
-- Classificadores nativos sob segredo industrial e relatórios genéricos de transparência que não cumprem o devido processo digital exigido por normas globais (como o EU AI Act e a NYC Local Law 144).
 
----
 
-## 2. Proposta Tecnológica
+## 2. Proposta tecnológica
 
-### 2.1 A solução do ponto de vista do usuário
-- Painel transparente de notificação com justificativa clara (XAI), leitor de tela integrado, transcrição acessível e canal direto para recurso humano.
 
-### 2.2 Arquitetura e Ciclo de Vida do Software
-- Mapeamento das etapas de requisitos, coleta, modelagem, testes e implantação, garantindo *Fairness-aware Learning*, auditoria de subgrupos e testes com leitor de tela.
+### 2.1 A solução, do ponto de vista do usuário
+[O que é, para quem, e como funciona passo a passo]
+
+
+### 2.2 Arquitetura
+
+
+```mermaid
+flowchart LR
+    Usuario[Usuário] --> Canal[App / SMS / Web]
+    Canal --> API
+    API --> Dados[(Banco de dados)]
+```
+
+
+[Que dados entram, onde ficam e quem acessa]
+
 
 ### 2.3 O trabalho de cada área
-- **Engenharia de Software:** Arquitetura semântica, suporte a teclado/leitores de tela (WCAG Nível AA) e integração de XAI.
-- **Análise de Dados:** Limpeza de datasets, auditoria de amostras (*re-weighting*) e monitoramento contínuo de métricas por subgrupo.
+
+
+#### [Área 1]
+#### [Área 2]
+#### Como as áreas se complementam
+
 
 ### 2.4 O que a tecnologia não resolve
-- Decisão final em casos ambíguos, validação ética e julgamento contextual, que permanecem sob supervisão humana direta.
 
----
 
-## 3. Análise Ética e Regulatória
+## 3. Análise ética
 
-### 3.1 Matriz de Riscos (Mínimo 5)
-- Análise de riscos de viés, opacidade, falhas de acessibilidade, vazamento de dados e falta de revisão humana.
 
-### 3.2 Decisão e Justificativa
-- **Decisão:** Implantar com controles.
-- **Justificativa:** (Até 10 linhas, com base nos princípios do Código de Ética da ACM e Recomendação da UNESCO).
+### 3.1 Matriz de riscos (mínimo 5)
+
+
+| # | Risco | Classificação | Impacto (quem e quão grave) | Controle |
+|---|---|---|---|---|
+| 1 | | [ético / legal-privacidade / segurança / viés-inclusão / governança] | | |
+
+
+### 3.2 Decisão
+**[Implantar | Implantar com controles | Não implantar ainda]**
+[Justificativa em até 10 linhas]
+
 
 ### 3.3 Controles antes de entrar em produção
-- Abrangendo os 6 eixos: transparência, revisão humana, minimização de dados, segurança, teste de viés e canal de contestação.
+
+
+| Eixo | Controle | Quem faz | Como saber que foi cumprido |
+|---|---|---|---|
+| Transparência | | | |
+| Revisão humana | | | |
+| Minimização de dados | | | |
+| Segurança | | | |
+| Teste de viés | | | |
+| Canal de contestação | | | |
+
 
 ### 3.4 LGPD
-- Tratamento de dados sob a base legal do legítimo interesse ou cumprimento de obrigação legal, observando a minimização e direitos dos titulares.
 
-### 3.5 Comunicado Público
-- Texto conciso (até 600 caracteres) destacando compromisso ético e governança.
 
----
+| Dado pessoal | Finalidade | Base legal | Por quanto tempo | Sensível ou de criança/adolescente? |
+|---|---|---|---|---|
+| | | | | |
 
-## 4. Acessibilidade e Inclusão Digital
+
+### 3.5 Comunicado público
+
+
+> [Texto de até 600 caracteres para o LinkedIn da consultoria]
+
+
+**Contagem:** [N] caracteres
+
+
+## 4. Acessibilidade e inclusão digital
+
 
 ### 4.1 Quem pode ficar de fora
-- Pessoas cegas ou com baixa visão, surdas, com deficiência motora, cognitiva ou de fala.
 
-### 4.2 Requisitos Concretos de Acessibilidade
-- **Visual:** *Alt text* em mídias, contraste mínimo de 4,5:1 (WCAG Nível AA), suporte a leitor de tela (NVDA/TalkBack).
-- **Auditiva:** Legendas e transcrições em vídeo/áudio.
-- **Motora:** Navegação 100% funcional por teclado (tecla Tab/Enter), sem necessidade de precisão de mouse.
-- **Cognitiva e Fala:** Linguagem simples, padrões previsíveis e comandos alternativos ao toque/voz.
-- **Enquadramento Legal:** Conformidade rigorosa com a LBI (Lei 13.146/2015, Art. 63) e eMAG.
 
----
+| Grupo | Barreira | O que a solução faz |
+|---|---|---|
+| | | |
+
+
+### 4.2 Requisitos de acessibilidade
+[Requisitos concretos, com o critério WCAG correspondente]
+
 
 ## 5. Sustentabilidade
 
-### 5.1 Impacto ambiental da solução (TI Verde)
-- Emprego de modelos compactos (*SLMs*), filtragem em camadas e servidores em data centers renováveis.
 
+### 5.1 Impacto ambiental da solução
 ### 5.2 Sustentabilidade do projeto
-- Manutenção por equipe multidisciplinar, suporte à saúde mental dos moderadores humanos e governança aberta.
+[Quem mantém, quem paga, o que acontece depois do primeiro ano]
 
----
 
-## 6. Impacto Esperado, 7. Quadro de Decisões, 8. Capítulos Individuais e 9. Referências
-- Inclusão das referências
+## 6. Impacto esperado
+
+
+### 6.1 Indicadores
+
+
+| Indicador | Como medir | Meta | Prazo |
+|---|---|---|---|
+| | | | |
+
+
+### 6.2 Como os usuários serão ouvidos
+### 6.3 Se a solução não pegar
+
+
+## 7. Quadro de decisões (mínimo 5)
+
+
+| Decisão | Alternativas consideradas | Por que escolhemos esta |
+|---|---|---|
+| | | |
+
+
+## 8. Capítulos individuais
+
+
+### 8.1 [Nome do integrante] — [Área]
+
+
+**Papel no projeto:** [pelo que respondeu e o que produziu]
+
+
+**Plano de desenvolvimento**
+
+
+| Competência que a solução exige | Técnica ou comportamental | Já tenho? |
+|---|---|---|
+| | | |
+
+
+**Metas SMART (6 a 12 meses)**
+1. [Específica, mensurável, atingível, relevante e com prazo]
+
+
+**Feedback dos colegas**
+[Avaliação construtiva e propositiva, escrita em conjunto pelos demais integrantes]
+
+
+### 8.2 [Próximo integrante] — [Área]
+### 8.3 [Próximo integrante] — [Área]
+### 8.4 [Próximo integrante (se houver)] — [Área]
+### 8.5 [Próximo integrante (se houver)] — [Área]
+
+
+## 9. Referências
+
+
+- [Autor ou órgão]. *[Título]*. [Veículo], [data]. [link]
+````
