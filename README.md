@@ -3,11 +3,11 @@
 
 ## Integrantes
 
-Bruno Rodrigues | dev-rodrigues-bruno | Gestão | 48101541
-Caio Dal Pizzol Fonseca | caio-fonseca | Cibersegurança e Gestão | 47923121
-Denner de Paula Coutinho | denner-coutinho | Engenharia de Dados e Gestão | 48094030
-João Vitor Pires Ribeiro | Joaovp07 | Ciência de Dados e Gestão | 47792591
-Nicollas Guedes Da Silva Santos | Nicollas-Guedes | Engenharia de Dados e Cloud | 48131334
+* Bruno Rodrigues | dev-rodrigues-bruno | Gestão | 48101541  
+* Caio Dal Pizzol Fonseca | caio-fonseca | Cibersegurança e Gestão | 47923121
+* Denner de Paula Coutinho | denner-coutinho | Engenharia de Dados e Gestão | 48094030
+* João Vitor Pires Ribeiro | Joaovp07 | Ciência de Dados e Gestão | 47792591
+* Nicollas Guedes Da Silva Santos | Nicollas-Guedes | Engenharia de Dados e Cloud | 48131334
 
 **Dossiê:** 5 - Moderação automatizada e transparência 
 **Recorte:** digitalização e automação, por regras auditáveis e com decisão final sempre humana, das solicitações administrativas de uma prefeitura, permitindo ao cidadão abrir e acompanhar o pedido online e à população consultar indicadores agregados de desempenho em um painel público. A implantação começa por um piloto em um único serviço municipal.
