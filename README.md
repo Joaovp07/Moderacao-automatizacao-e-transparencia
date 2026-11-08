@@ -132,7 +132,7 @@ A plataforma deverá seguir a Lei Geral de Proteção de Dados (Lei nº 13.709/2
 **Contagem:** [N] caracteres
 
 
-### 4. Acessibilidade e inclusão digital
+4. Acessibilidade e inclusão digital
 
 O PIST nasce digital, mas o público de uma prefeitura é a população inteira, inclusive quem não está (ou está mal) conectado. Os números mostram que o problema não é só ter internet, e sim saber usá-la para resolver a vida:
 
@@ -158,26 +158,26 @@ A plataforma deverá seguir a Lei Brasileira de Inclusão (Lei nº 13.146/2015) 
 | Pessoas com baixa escolaridade | Formulários, termos técnicos e mensagens de erro difíceis de entender. | Linguagem simples, ícones com texto, uma pergunta por vez, leitura em voz alta e atendimento humano. |
 | Pessoas sem conta gov.br prata ou ouro | Login complexo pode impedir o primeiro acesso. | Acesso com CPF e código por SMS; gov.br exigido só quando a lei pedir identificação forte. |
 
-### 4.2 Requisitos de acessibilidade
+4.2 Requisitos de acessibilidade
 
 A referência técnica é a WCAG 2.2, nível AA (W3C, 2024), complementada pelo eMAG (Modelo de Acessibilidade em Governo Eletrônico), que é o padrão dos órgãos públicos brasileiros. Cada requisito abaixo vira critério de aceite: a funcionalidade só vai para produção se passar.
 
 #	Requisito concreto no PIST	Critério WCAG 2.2
-- R1	Todo ícone, imagem e botão gráfico tem texto alternativo; os gráficos do painel público têm tabela de dados equivalente	1.1.1 Conteúdo não textual (A)
-- R2	O formulário usa rótulos reais (<label>), títulos em ordem lógica e campos agrupados, para o leitor de tela entender a estrutura	1.3.1 Informações e relações (A); 3.3.2 Rótulos ou instruções (A)
-- R3	O status do pedido nunca é indicado só por cor (ex.: "Em análise" escrito, não só um ponto amarelo)	1.4.1 Uso de cor (A)
-- R4	Contraste mínimo de 4,5:1 para texto e 3:1 para bordas de campos, botões e ícones	1.4.3 Contraste mínimo (AA); 1.4.11 Contraste não textual (AA)
-- R5	A página funciona com o texto ampliado em 200% e em tela de 320 px de largura sem rolagem horizontal	1.4.4 Redimensionar texto (AA); 1.4.10 Refluxo (AA)
-- R6	Todas as funções (abrir, anexar, acompanhar, contestar) funcionam só pelo teclado, com foco sempre visível e nunca escondido por banners ou cabeçalhos fixos	2.1.1 Teclado (A); 2.4.7 Foco visível (AA); 2.4.11 Foco não obscurecido (AA)
-- R7	Botões e links com área de toque de no mínimo 24 × 24 px (o projeto adota 44 × 44 px para facilitar o uso por idosos)	2.5.8 Tamanho do alvo – mínimo (AA)
-- R8	A sessão avisa antes de expirar e permite estender o tempo; o rascunho é salvo	2.2.1 Tempo ajustável (A)
-- R9	Erros são explicados em texto, com a sugestão de correção ("O CPF tem 11 números; faltam 2")	3.3.1 Identificação do erro (A); 3.3.3 Sugestão de erro (AA)
-- R10	O sistema não pede de novo um dado já informado no mesmo pedido (endereço, telefone)	3.3.7 Entrada redundante (A)
-- R11	O login não exige teste cognitivo (sem CAPTCHA de quebra-cabeça e sem memorizar senha); usa código por SMS ou gov.br, com colar/preencher automático liberado	3.3.8 Autenticação acessível – mínimo (AA)
-- R12	O botão "Falar com uma pessoa" e o telefone de ajuda aparecem sempre no mesmo lugar em todas as telas	3.2.6 Ajuda consistente (A)
-- R13	Mudanças de status e mensagens de "pedido enviado" são anunciadas pelo leitor de tela sem mudar o foco	4.1.3 Mensagens de status (AA)
-- R14	Componentes personalizados (menus, abas, upload) expõem nome, função e estado corretos para tecnologias assistivas	4.1.2 Nome, função, valor (A)
-- R15	Textos escritos para leitura até o nível do ensino fundamental, revisados com usuários de baixa escolaridade (meta além do AA)
+R1	Todo ícone, imagem e botão gráfico tem texto alternativo; os gráficos do painel público têm tabela de dados equivalente	1.1.1 Conteúdo não textual (A)
+R2	O formulário usa rótulos reais (<label>), títulos em ordem lógica e campos agrupados, para o leitor de tela entender a estrutura	1.3.1 Informações e relações (A); 3.3.2 Rótulos ou instruções (A)
+R3	O status do pedido nunca é indicado só por cor (ex.: "Em análise" escrito, não só um ponto amarelo)	1.4.1 Uso de cor (A)
+R4	Contraste mínimo de 4,5:1 para texto e 3:1 para bordas de campos, botões e ícones	1.4.3 Contraste mínimo (AA); 1.4.11 Contraste não textual (AA)
+R5	A página funciona com o texto ampliado em 200% e em tela de 320 px de largura sem rolagem horizontal	1.4.4 Redimensionar texto (AA); 1.4.10 Refluxo (AA)
+R6	Todas as funções (abrir, anexar, acompanhar, contestar) funcionam só pelo teclado, com foco sempre visível e nunca escondido por banners ou cabeçalhos fixos	2.1.1 Teclado (A); 2.4.7 Foco visível (AA); 2.4.11 Foco não obscurecido (AA)
+R7	Botões e links com área de toque de no mínimo 24 × 24 px (o projeto adota 44 × 44 px para facilitar o uso por idosos)	2.5.8 Tamanho do alvo – mínimo (AA)
+R8	A sessão avisa antes de expirar e permite estender o tempo; o rascunho é salvo	2.2.1 Tempo ajustável (A)
+R9	Erros são explicados em texto, com a sugestão de correção ("O CPF tem 11 números; faltam 2")	3.3.1 Identificação do erro (A); 3.3.3 Sugestão de erro (AA)
+R10	O sistema não pede de novo um dado já informado no mesmo pedido (endereço, telefone)	3.3.7 Entrada redundante (A)
+R11	O login não exige teste cognitivo (sem CAPTCHA de quebra-cabeça e sem memorizar senha); usa código por SMS ou gov.br, com colar/preencher automático liberado	3.3.8 Autenticação acessível – mínimo (AA)
+R12	O botão "Falar com uma pessoa" e o telefone de ajuda aparecem sempre no mesmo lugar em todas as telas	3.2.6 Ajuda consistente (A)
+R13	Mudanças de status e mensagens de "pedido enviado" são anunciadas pelo leitor de tela sem mudar o foco	4.1.3 Mensagens de status (AA)
+R14	Componentes personalizados (menus, abas, upload) expõem nome, função e estado corretos para tecnologias assistivas	4.1.2 Nome, função, valor (A)
+R15	Textos escritos para leitura até o nível do ensino fundamental, revisados com usuários de baixa escolaridade (meta além do AA)
 
 
 ## 5. Sustentabilidade
@@ -207,17 +207,47 @@ A perenidade da solução envolve sustentabilidade operacional, financeira e hum
 
 ## 6. Impacto esperado
 
+O piloto roda em um único serviço municipal durante 12 meses. Antes de ligar o PIST, a equipe mede por 3 meses a linha de base do processo atual (tempo de resposta, volume por canal, reclamações na ouvidoria), para que toda meta abaixo seja comparada com a situação real e não com uma estimativa.
 
-### 6.1 Indicadores
+## 6.1 Indicadores
 
+Indicador	Como medir	Meta	Prazo
+Tempo médio entre a abertura e a resposta final do pedido	Registros de data e hora do próprio PIST, comparados à linha de base	Redução de 40%	6 meses
+Pedidos dentro do prazo legal ou de referência do serviço	% de pedidos concluídos dentro do prazo, extraído do PIST	≥ 90%	6 meses
+Adesão ao canal digital	% de pedidos abertos online sobre o total do serviço	≥ 50%, sem queda no número de atendimentos presenciais disponíveis	12 meses
+Taxa de conclusão do formulário online	Pedidos enviados ÷ pedidos iniciados (dados de uso anonimizados)	≥ 80%	3 meses
+Equidade entre canais	Diferença do tempo médio de resposta entre pedidos do balcão e pedidos online	≤ 10%	6 meses (acompanhado mensalmente)
+Satisfação do cidadão	Pesquisa de 1 pergunta (nota de 1 a 5) ao final do atendimento, por SMS, web ou no balcão	Média ≥ 4,0 no geral e ≥ 4,0 separadamente entre pessoas com 60+ e pessoas com deficiência	6 meses
+Qualidade da automação	% de encaminhamentos automáticos corrigidos pelo servidor e % de decisões revertidas após contestação	Correções ≤ 10% e reversões ≤ 5%	Mensal, a partir do 3º mês
+Resposta às contestações	Tempo médio entre a contestação do cidadão e a resposta humana	≤ 10 dias úteis	3 meses
+Acessibilidade	Erros críticos nos testes automáticos e manuais de WCAG 2.2 AA	Zero erro crítico em cada versão publicada	Contínuo
+Reclamações na ouvidoria sobre o serviço piloto	Registros da ouvidoria municipal, comparados à linha de base	Redução de 30%	12 meses
+Transparência ativa	Defasagem dos dados do painel público e número de acessos ao painel	Dados atualizados com no máximo 7 dias de atraso; acessos crescentes trimestre a trimestre	3 meses
+Disponibilidade do sistema	Monitoramento de uptime	≥ 99,5% ao mês	Contínuo
 
-| Indicador | Como medir | Meta | Prazo |
-|---|---|---|---|
-| | | | |
+Os indicadores são publicados no próprio painel público. Assim, o PIST presta contas sobre si mesmo com a mesma transparência que promete para a prefeitura.
 
+## 6.2 Como os usuários serão ouvidos
 
-### 6.2 Como os usuários serão ouvidos
-### 6.3 Se a solução não pegar
+A escuta acontece em quatro momentos, antes de qualquer decisão de ampliar o PIST para outros serviços:
+
+Antes do piloto (descoberta): entrevistas com cerca de 20 cidadãos que já usaram o serviço escolhido (presencialmente e por telefone) e com os servidores que o operam, para mapear onde o processo trava. Os protótipos de tela são testados com o mesmo público descrito na seção 4.
+Durante o piloto (contínuo): pesquisa de satisfação de uma pergunta ao final de cada atendimento, em todos os canais, com campo aberto para comentário; botão "Isto foi útil?" nas páginas; relatos de barreiras de acessibilidade pela declaração de acessibilidade; e os registros da ouvidoria.
+Oficinas presenciais trimestrais em CRAS, bibliotecas e centros de convivência, para ouvir justamente quem usa pouco o canal digital, com apoio dos conselhos municipais da pessoa idosa e da pessoa com deficiência, que participam também como comitê consultivo do projeto.
+Revisão de 12 meses: relatório público com os resultados, o que mudou a partir das sugestões recebidas e o que não foi possível mudar (e por quê).
+
+Critério para ampliar: o PIST só vai para um segundo serviço se, ao final do piloto, a maior parte das metas da tabela 6.1 tiver sido atingida e nenhum grupo da seção 4.1 estiver em situação pior do que antes (satisfação menor ou tempo de resposta maior que o dos demais).
+
+## 6.3 Se a solução não pegar
+
+Risco de não pegar	Sinal de alerta	O que fazer
+Baixa adesão ao canal digital	Menos de 20% dos pedidos online após 6 meses	Investigar o motivo com as pesquisas e oficinas (desconhecimento, desconfiança, dificuldade de uso), reforçar a divulgação por canais de bairro (rádio comunitária, UBS, escolas, lideranças locais) e simplificar o fluxo. O balcão continua funcionando, então o serviço não é prejudicado.
+Servidores resistem ou contornam o sistema	Pedidos tratados fora do PIST, registros incompletos	Envolver os servidores desde o desenho, treinar no horário de trabalho, ter um "servidor de referência" por setor e mostrar o ganho para eles (menos retrabalho, fila organizada).
+A automação erra demais ou gera desconfiança	Correções acima de 10% ou reversões acima de 5%	Suspender a regra automática problemática e voltar à triagem manual daquele tipo de pedido até revisar a regra; publicar o que aconteceu no painel. A decisão final já é sempre humana, então o erro não chega ao cidadão como decisão definitiva.
+Exclusão de quem já tinha dificuldade	Satisfação ou tempo de resposta pior para 60+, pessoas com deficiência ou pedidos do balcão	Tratar como falha grave: priorizar a correção antes de qualquer nova funcionalidade e reforçar o atendimento assistido.
+Falta de orçamento ou troca de gestão	Corte de verba, mudança de prioridades	Código aberto e documentação completa, para que a prefeitura não fique presa a um fornecedor; e resultados do piloto publicados, que servem de argumento para manter o projeto.
+
+Se, ao fim dos 12 meses, as metas principais não forem atingidas mesmo após os ajustes, a recomendação é não ampliar: manter o que funcionou (por exemplo, o protocolo único e o painel público) e documentar as lições aprendidas em relatório público, para que outra prefeitura ou outra equipe não repita os mesmos erros.
 
 
 ## 7. Quadro de decisões (mínimo 5)
@@ -259,8 +289,18 @@ A perenidade da solução envolve sustentabilidade operacional, financeira e hum
 ### 8.5 [Próximo integrante (se houver)] — [Área]
 
 
+
 ## 9. Referências
-
-
-- [Autor ou órgão]. *[Título]*. [Veículo], [data]. [link]
-````
+* CGI.br / NIC.br. *Sistematização da Consulta Pública sobre Regulação de Plataformas Digitais*. Comitê Gestor da Internet no Brasil, dezembro de 2024. [https://www.cgi.br/](https://www.cgi.br/)
+* DATA PRIVACY BRASIL. *Asymmetries of Information and Algorithmic Governance in Content Moderation*. Associação de Pesquisa Data Privacy Brasil, novembro de 2024. [https://www.dataprivacybr.org/](https://www.dataprivacybr.org/)
+* INTERNETLAB. *Pesquisa em Moderação de Conteúdo, Direitos Digitais e Liberdade de Expressão*. InternetLab, março de 2025. [https://internetlab.org.br/](https://internetlab.org.br/)
+* ITS RIO. *Governança de Plataformas Digitais e Transparência Algorítmica*. Instituto de Tecnologia e Sociedade do Rio de Janeiro, 2025. [https://itsrio.org/](https://itsrio.org/)
+* SCHWARTZ, Roy et al. *Green AI e Eficiência Energética em LLMs - Revisão Atualizada*. Communications of the ACM, 2025. [https://dl.acm.org/](https://dl.acm.org/)
+* UNIÃO EUROPEIA. *Digital Services Act (DSA) - Relatórios de Transparência e Implementação*. Jornal Oficial da União Europeia, 2024. [https://eur-lex.europa.eu/](https://eur-lex.europa.eu/)
+* BRASIL. Lei nº 13.146, de 6 de julho de 2015 – Lei Brasileira de Inclusão da Pessoa com Deficiência. Versão vigente. https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm
+* BRASIL. Lei nº 14.129, de 29 de março de 2021 – Lei do Governo Digital. Versão vigente. https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14129.htm
+* CGI.br / Cetic.br. TIC Domicílios 2025 – Principais resultados. Dez. 2025. https://cetic.br/media/analises/tic_domicilios_2025_principais_resultados.pdf
+* IBGE. Censo 2022: Brasil tem 14,4 milhões de pessoas com deficiência. Agência de Notícias IBGE, 23 maio 2025. https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/43463-censo-2022-brasil-tem-14-4-milhoes-de-pessoas-com-deficiencia
+* IBGE. Proporção de usuários da internet no país ultrapassou 90% da população de 10 anos ou mais em 2025 (PNAD Contínua TIC 2025). Agência de Notícias IBGE, 2 jul. 2026. https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/47408-proporcao-de-usuarios-da-internet-no-pais-ultrapassou-90-da-populacao-de-10-anos-ou-mais-em-2025
+* INAF / UNICEF Brasil. Analfabetismo funcional não apresenta melhora e alcança 29% dos brasileiros, mesmo patamar de 2018. 5 maio 2025. https://www.unicef.org/brazil/comunicados-de-imprensa/analfabetismo-funcional-nao-apresenta-melhora-e-alcanca-29-por-cento-dos-brasileiros-mesmo-patamar-de-2018-aponta-novo-levantamento-do-inaf
+* W3C. Web Content Accessibility Guidelines (WCAG) 2.2. W3C Recommendation, 12 dez. 2024. https://www.w3.org/TR/2024/REC-WCAG22-20241212/
