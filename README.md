@@ -293,11 +293,8 @@ A referência técnica é a **WCAG 2.2, nível AA** (W3C, 2024), complementada p
 | R14 | Componentes personalizados (menus, abas, upload) expõem nome, função e estado corretos para tecnologias assistivas. | 4.1.2 Nome, função, valor (A) |
 | R15 | Textos escritos para leitura até o nível do ensino fundamental, revisados com usuários de baixa escolaridade (meta além do AA). | 3.1.5 Nível de leitura (AAA) |
 
-**Como garantir que os requisitos são cumpridos:**
-
-- **Automático:** verificação de acessibilidade (axe-core e Lighthouse) no pipeline de integração contínua; build com erro crítico de acessibilidade não é publicado.
-- **Manual:** a cada versão, roteiro de teste com teclado, NVDA, TalkBack e zoom de 200%.
-- **Com pessoas reais:** antes do piloto e a cada trimestre, testes de usabilidade com pelo menos 15 participantes, incluindo pessoas com 60 anos ou mais, pessoas com deficiência e pessoas com baixa escolaridade, recrutadas com apoio dos conselhos municipais da pessoa
+- **Com pessoas reais:** antes do piloto e a cada trimestre, testes de usabilidade com pelo menos 15 participantes, incluindo pessoas com 60 anos ou mais, pessoas com deficiência e pessoas com baixa escolaridade, recrutadas com apoio dos conselhos municipais da pessoa idosa e da pessoa com deficiência.
+- **Declaração pública de acessibilidade** no site, com o nível de conformidade, as limitações conhecidas e um canal para relatar barreiras.
 
 ## 5. Sustentabilidade
 
@@ -340,16 +337,16 @@ Os indicadores serão medidos a partir dos registros do próprio PIST e comparad
 | Atualização do painel público | Atraso entre o registro do dado e sua publicação. | Até 7 dias. | 3 meses. |
 | Disponibilidade do sistema | Monitoramento de funcionamento (uptime). | No mínimo 99,5% ao mês. | Contínuo. |
 
-## 6.2 Como os usuários serão ouvidos
+### 6.2 Como os usuários serão ouvidos
 
-A escuta acontece em quatro momentos, antes de qualquer decisão de ampliar o PIST para outros serviços:
+A escuta acontece em quatro momentos, **antes** de qualquer decisão de ampliar o PIST para outros serviços:
 
-Antes do piloto (descoberta): entrevistas com cerca de 20 cidadãos que já usaram o serviço escolhido (presencialmente e por telefone) e com os servidores que o operam, para mapear onde o processo trava. Os protótipos de tela são testados com o mesmo público descrito na seção 4.
-Durante o piloto (contínuo): pesquisa de satisfação de uma pergunta ao final de cada atendimento, em todos os canais, com campo aberto para comentário; botão "Isto foi útil?" nas páginas; relatos de barreiras de acessibilidade pela declaração de acessibilidade; e os registros da ouvidoria.
-Oficinas presenciais trimestrais em CRAS, bibliotecas e centros de convivência, para ouvir justamente quem usa pouco o canal digital, com apoio dos conselhos municipais da pessoa idosa e da pessoa com deficiência, que participam também como comitê consultivo do projeto.
-Revisão de 12 meses: relatório público com os resultados, o que mudou a partir das sugestões recebidas e o que não foi possível mudar (e por quê).
+1. **Antes do piloto (descoberta):** entrevistas com cerca de 20 cidadãos que já usaram o serviço escolhido (presencialmente e por telefone) e com os servidores que o operam, para mapear onde o processo trava. Os protótipos de tela são testados com o mesmo público descrito na seção 4.
+2. **Durante o piloto (contínuo):** pesquisa de satisfação de uma pergunta ao final de cada atendimento, em todos os canais, com campo aberto para comentário; botão "Isto foi útil?" nas páginas; relatos de barreiras de acessibilidade pela declaração de acessibilidade; e os registros da ouvidoria.
+3. **Oficinas presenciais trimestrais** em CRAS, bibliotecas e centros de convivência, para ouvir justamente quem usa pouco o canal digital, com apoio dos conselhos municipais da pessoa idosa e da pessoa com deficiência, que participam também como **comitê consultivo** do projeto.
+4. **Revisão de 12 meses:** relatório público com os resultados, o que mudou a partir das sugestões recebidas e o que não foi possível mudar (e por quê).
 
-Critério para ampliar: o PIST só vai para um segundo serviço se, ao final do piloto, a maior parte das metas da tabela 6.1 tiver sido atingida e nenhum grupo da seção 4.1 estiver em situação pior do que antes (satisfação menor ou tempo de resposta maior que o dos demais).
+**Critério para ampliar:** o PIST só vai para um segundo serviço se, ao final do piloto, a maior parte das metas da tabela 6.1 tiver sido atingida **e** nenhum grupo da seção 4.1 estiver em situação pior do que antes (satisfação menor ou tempo de resposta maior que o dos demais).
 
 ### 6.3 Se a solução não pegar
 
