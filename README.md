@@ -46,21 +46,70 @@ As falhas de moderação automatizada decorrem de fatores estruturais e, priorit
 
 
 ### 2.1 A solução, do ponto de vista do usuário
-[O que é, para quem, e como funciona passo a passo]
+
+Propõe-se a criação da **Plataforma Integrada de Solicitações e Transparência (PIST)**, um sistema digital que reúne em um único ambiente a abertura, o encaminhamento, o acompanhamento e a prestação de contas de solicitações administrativas. O projeto busca reduzir etapas manuais, evitar perda de documentos, tornar os prazos mais previsíveis e permitir que a população acompanhe o que acontece com suas demandas.
+
+A plataforma será destinada a cidadãos, servidores responsáveis pelo atendimento, gestores públicos e equipes de auditoria. O sistema não substitui a decisão dos servidores: automatiza tarefas repetitivas e fornece registros e informações para apoiar decisões humanas.
+
+**Fluxo de uso:**
+
+1. **Acesso:** o cidadão entra pelo portal responsivo, sem precisar instalar aplicativo. Para solicitações que exigem identificação, utiliza autenticação segura; quando a natureza do serviço permitir, o sistema oferece envio sem criação de conta.
+2. **Escolha do serviço:** o usuário seleciona o tipo de solicitação e visualiza linguagem simples, documentos necessários, etapas previstas, prazo estimado e critérios de atendimento.
+3. **Preenchimento assistido:** formulários dinâmicos mostram apenas campos necessários ao tipo de pedido. Validações automáticas indicam erros antes do envio.
+4. **Protocolo:** após o envio, a plataforma gera número de protocolo e comprovante. O usuário pode consultar o status, os prazos e as movimentações sem precisar comparecer presencialmente.
+5. **Triagem automatizada:** regras configuradas pela área responsável verificam completude, classificam o tipo de demanda e encaminham o pedido à unidade competente. Se houver dúvida, inconsistência ou exceção, o caso é direcionado a uma pessoa.
+6. **Análise e decisão:** o servidor examina os documentos e decide sobre o pedido. A plataforma registra responsável, data, justificativa e eventuais solicitações de complementação.
+7. **Notificações:** o cidadão recebe aviso sobre mudanças de status e prazos por canal escolhido, como e-mail ou SMS, sem que a notificação exponha dados pessoais.
+8. **Transparência:** um painel público apresenta dados agregados — quantidade de solicitações, tempo médio, percentual dentro do prazo, pendências e volume por categoria — sem divulgar nomes, documentos ou detalhes de casos individuais.
+9. **Avaliação:** após a conclusão, o cidadão pode avaliar a experiência e registrar dificuldade ou contestação.
+
+A automação será baseada inicialmente em **regras claras e auditáveis**, e não em decisões autônomas de inteligência artificial. Isso facilita explicar por que um pedido foi classificado ou encaminhado de determinada maneira. Qualquer futura adoção de IA deverá passar por avaliação de risco, testes, supervisão humana e comunicação pública.
 
 
 ### 2.2 Arquitetura
 
 
+A arquitetura proposta separa os canais de atendimento, as regras de negócio, o armazenamento de dados e a camada pública de transparência.
+
 ```mermaid
-flowchart LR
-    Usuario[Usuário] --> Canal[App / SMS / Web]
-    Canal --> API
-    API --> Dados[(Banco de dados)]
+flowchart TD
+    C[ Cidadão ] --> W[Portal web responsivo / canal assistido]
+    S[Servidor público ] --> P[Painel interno de atendimento]
+    W --> API[API segura / gateway]
+    P --> API
+    API --> IAM[Autenticação e controle de acesso]
+    API --> WF[Motor de fluxo e regras]
+    WF --> DB[(Banco transacional)]
+    WF --> DOC[Armazenamento de documentos]
+    WF --> N[Serviço de notificações]
+    DB --> AUD[Registro de auditoria]
+    DB --> ETL[Pipeline de dados / agregação]
+    ETL --> PUB[(Base pública agregada)]
+    PUB --> DASH[Painel de transparência]
+    AUD --> MON[Monitoramento e alertas]
+    API --> EXT[Integrações oficiais via APIs]
 ```
 
 
-[Que dados entram, onde ficam e quem acessa]
+
+#### Dados: entrada, armazenamento e acesso
+
+**Dados de entrada:** categoria da solicitação, descrição, dados de contato estritamente necessários, documentos comprobatórios quando exigidos, data/hora, canal de entrada e consentimentos ou avisos aplicáveis.
+
+**Armazenamento:**
+- Dados operacionais e protocolos ficam no banco transacional, em ambiente institucional ou nuvem contratada com controles de segurança.
+- Documentos são armazenados separadamente, com criptografia e permissões específicas.
+- Logs de auditoria são protegidos contra alteração e contêm somente os elementos necessários para rastreabilidade.
+- Indicadores destinados ao painel público são processados em uma base separada, agregados e revisados para reduzir risco de reidentificação.
+
+**Acesso:**
+- Cidadãos: somente seus próprios protocolos e documentos, após autenticação quando necessária.
+- Servidores: solicitações vinculadas à unidade e à função, com acesso mínimo necessário.
+- Gestores: indicadores operacionais e relatórios pertinentes à sua responsabilidade.
+- Auditoria, segurança e encarregado de dados: acesso controlado e registrado para apuração e conformidade.
+- Público geral: somente estatísticas e informações administrativas que possam ser divulgadas legalmente.
+
+A integração entre órgãos ocorrerá por APIs documentadas e autorizadas, evitando duplicação de dados e respeitando a finalidade de cada compartilhamento. A publicação de informações seguirá a legislação de transparência, sem expor dados pessoais protegidos.
 
 
 ### 2.3 O trabalho de cada área
