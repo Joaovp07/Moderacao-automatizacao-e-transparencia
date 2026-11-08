@@ -3,12 +3,10 @@
 
 ## Integrantes
 
-## Integrantes
-
 | Nome completo | GitHub | Área de carreira | RGM |
 |---|---|---|---|
 | Bruno Rodrigues | dev-rodrigues-bruno | Gestão | 48101541 |
-| Caio Dal Pizzol Fonseca | caio-fonseca | Cibersegurança e Gestão | 47923121 |
+| Caio Dal Pizzol Fonseca | Caio Fonseca | Cibersegurança e Gestão | 47923121 |
 | Denner de Paula Coutinho | denner-coutinho | Engenharia de Dados e Gestão | 48094030 |
 | João Vitor Pires Ribeiro | Joaovp07 | Ciência de Dados e Gestão | 47792591 |
 | Nicollas Guedes Da Silva Santos | Nicollas-Guedes | Engenharia de Dados e Cloud | 48131334 |
