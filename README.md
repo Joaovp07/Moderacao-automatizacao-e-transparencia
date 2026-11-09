@@ -445,7 +445,29 @@ Recebi um feedback positivo dos colegas, que destacaram a organização do quadr
 
 O Denner fez a ponte entre a proposta técnica e as pessoas que vão usar o PIST. A seção de acessibilidade começa pelos números de quem fica de fora e termina em requisitos que dá para testar, e a de impacto tem metas comparadas com uma linha de base real e uma regra objetiva para decidir se o projeto cresce ou não. Gostamos especialmente de ele ter incluído a comparação entre o atendimento no balcão e o online, para garantir que ninguém seja prejudicado por não usar a internet. Como próximo passo, sugerimos que ele leve isso para a área técnica dele, mostrando como os dados de cada indicador seriam coletados e processados no pipeline, e que procure experiência real de pesquisa com usuários para testar na prática o que planejou aqui.
 
-### 8.4 [Próximo integrante (se houver)] — [Área]
+### 8.4 João Vitor Pires Ribeiro — Ciência de Dados e Gestão
+
+**Papel no projeto:** Fiquei responsável pelas seções 1 (Análise do problema) e 5 (Sustentabilidade). Na seção 1, estruturei a visão de negócio e governança, mapeando como a burocracia e a falta de transparência afetam os cidadãos e identificando as causas tecnológicas desse cenário, como o isolamento de sistemas legados e o uso de automações opacas. Na seção 5, cruzei conceitos de Gestão e Ciência de Dados para definir a sustentabilidade operacional e ambiental da plataforma PIST. Fui responsável por embasar a decisão de rejeitar o uso de Inteligência Artificial preditiva pesada (como LLMs) em favor de regras determinísticas auditáveis e arquitetura *Serverless*, alinhando eficiência analítica com redução de impacto ambiental (*Green AI*) e otimização de custos.
+
+**Plano de desenvolvimento**
+
+| Competência que a solução exige | Técnica ou comportamental | Já tenho? |
+|---|---|---|
+| Traduzir problemas de negócios e governança em requisitos analíticos e de arquitetura | Técnica / Comportamental | Parcial (apliquei no mapeamento do problema no PIST, mas busco expandir essa visão em vivência corporativa real) |
+| Otimização de modelos e práticas de *Green AI* (eficiência de hardware e processamento) | Técnica | Não (compreendo a teoria e os impactos, mas preciso aplicar métricas de consumo energético em algoritmos na prática) |
+| Gestão do ciclo de vida e viabilidade financeira de projetos públicos de tecnologia | Técnica | Parcial (estruturei o plano de sustentabilidade do projeto, mas não gerenciei um orçamento prático) |
+| Visão crítica para questionar o uso de IA pesada quando soluções determinísticas resolvem o problema | Comportamental | Sim (apliquei essa visão ao propor um motor de regras explicável em vez de algoritmos opacos) |
+
+**Metas SMART (6 a 12 meses)**
+
+1. Até junho de 2027, concluir um curso avançado focado em Ciência de Dados ou Engenharia de Software voltada para eficiência computacional, e desenvolver um projeto no GitHub comparando o tempo de processamento de um modelo preditivo versus uma lógica determinística em um conjunto de dados públicos.
+2. Até setembro de 2027, aplicar ferramentas práticas de Gestão e Análise de Processos (como fluxogramas BPMN ou *Design Thinking*) para mapear a jornada do usuário e documentar a solução de um problema real de ponta a ponta em um projeto acadêmico ou de estágio.
+
+**Feedback dos colegas**
+
+O João foi essencial para dar o embasamento do porquê o projeto PIST deveria existir e de como ele deve se sustentar técnica e financeiramente no longo prazo. Sua decisão de integrar a Ciência de Dados com a Sustentabilidade (recusando o uso desnecessário de IAs opacas) deu o tom ético e eficiente para a arquitetura do sistema. Como ponto de desenvolvimento, sugerimos que ele aplique essa análise crítica de eficiência e *Green AI* no desenvolvimento de pipelines de dados em projetos práticos, para comprovar a economia de recursos apontada teoricamente neste trabalho.
+
+
 ### 8.5 [Próximo integrante (se houver)] — [Área]
 
 
