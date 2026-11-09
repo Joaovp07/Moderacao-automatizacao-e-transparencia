@@ -468,7 +468,31 @@ O Denner fez a ponte entre a proposta técnica e as pessoas que vão usar o PIST
 O João foi essencial para dar o embasamento do porquê o projeto PIST deveria existir e de como ele deve se sustentar técnica e financeiramente no longo prazo. Sua decisão de integrar a Ciência de Dados com a Sustentabilidade (recusando o uso desnecessário de IAs opacas) deu o tom ético e eficiente para a arquitetura do sistema. Como ponto de desenvolvimento, sugerimos que ele aplique essa análise crítica de eficiência e *Green AI* no desenvolvimento de pipelines de dados em projetos práticos, para comprovar a economia de recursos apontada teoricamente neste trabalho.
 
 
-### 8.5 [Próximo integrante (se houver)] — [Área]
+### 8.5 Caio Dal Pizzol Fonseca — Cibersegurança e Gestão
+
+**Papel no projeto:**
+
+Fiquei responsável pela seção 3 (Análise Ética), realizando o levantamento dos principais riscos relacionados ao uso da plataforma PIST. Elaborei a matriz de riscos, considerando problemas como vazamento de dados, acessos indevidos, falhas na classificação de solicitações e exclusão digital. Também contribuí com a definição de controles de segurança, revisão humana, proteção de dados pessoais e aplicação da LGPD, buscando garantir que a plataforma funcione com transparência e responsabilidade.
+
+**Plano de desenvolvimento**
+
+| Competência que a solução exige | Técnica ou comportamental | Já tenho? |
+|---|---|---|
+| Identificação de vulnerabilidades e análise de riscos em sistemas | Técnica | Parcial (conheço conceitos de segurança, mas preciso aprofundar a prática em testes e análise de vulnerabilidades). |
+| Aplicação da LGPD e proteção de dados pessoais | Técnica | Parcial (estudei os requisitos durante o projeto, mas preciso aprofundar meus conhecimentos sobre sua aplicação prática). |
+| Controle de acesso, autenticação e proteção de informações | Técnica | Parcial (tenho conhecimentos iniciais e busco desenvolver experiência prática). |
+| Gestão de riscos e definição de medidas preventivas | Técnica / Comportamental | Parcial (apliquei esses conceitos na matriz de riscos do projeto). |
+| Comunicação e colaboração com diferentes áreas | Comportamental | Sim (participei da organização das medidas éticas e de segurança junto à proposta do grupo). |
+
+**Metas SMART (6 a 12 meses)**
+
+1. Até maio de 2027, concluir um curso de fundamentos de cibersegurança e segurança de aplicações web, aplicando os conhecimentos em um projeto prático e documentando pelo menos 5 vulnerabilidades e suas respectivas medidas de correção.
+
+2. Até novembro de 2027, desenvolver um projeto prático de segurança utilizando autenticação, controle de acesso e registro de auditoria, publicando a documentação e os resultados no GitHub.
+
+**Feedback dos colegas**
+
+Caio contribuiu para a análise dos riscos éticos e de segurança da plataforma PIST, destacando a importância da proteção dos dados dos cidadãos, da aplicação da LGPD e da revisão humana nas decisões administrativas. Sua participação ajudou a estabelecer medidas preventivas para tornar o sistema mais seguro e transparente. Como ponto de desenvolvimento, sugerimos aprofundar seus conhecimentos práticos em testes de segurança e análise de vulnerabilidades, buscando aplicar esses conhecimentos em projetos reais.
 
 
 
